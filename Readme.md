@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Николаенко](https://up.htmlacademy.ru/adaptive/9/user/234657).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://htmlacademy.ru/profile/id87167)
 
 ---
 
