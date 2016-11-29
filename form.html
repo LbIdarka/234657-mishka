@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма заказа</title>
+  </head>
+  <body>
+    <header class="form-header">
+      <div class="logo">
+        <a href="index.html"><img src="http://placekitten.com/86/35" width="86" height="35" alt="Мишка"></a>
+      </div>
+      <nav class="menu">
+        <span class="menu__icon"></span>
+        <ul class="menu__list">
+          <li class="menu__item">Каталог товаров</li>
+          <li class="menu__item">Вязание на заказ</li>
+          <li class="menu__item--search">Поиск по сайту</li>
+          <li class="menu__item--cart">Корзина: пока пуста</li>
+        </ul>
+      </nav>
+      <div class="form-header__title">
+        <h1>Вязание на заказ</h1>
+      </div>
+    </header>
+    <main class="form-main">
+      <p class="form-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form  class="filter"action="#" method="get">
+        <fieldset class="filter__type">
+          <legend class="filter__title">Тип</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__input" type="radio" name="accessory" id="accessory">
+              <label for="accessory" class="filter__label">Аксессуар для  интерьера</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="radio" name="toy" id="toy">
+              <label for="toy" class="filter__label">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__color">
+          <legend class="filter__title">Цвет</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="white" id="white">
+              <label for="white" class="filter__label">Белый</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="grey" id="grey">
+              <label for="grey" class="filter__label">Серый</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="tiffany" id="tiffany">
+              <label for="tiffany" class="filter__label">«Тиффани»</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="black" id="black">
+              <label for="black" class="filter__label">Черный</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="pink" id="pink">
+              <label for="pink" class="filter__label">Розовый</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input" type="checkbox" name="orange" id="orange">
+              <label for="orange" class="filter__label">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__introduce">
+          <legend class="filter__title">ФИО</legend>
+          <label for="name" class="filter__label">Имя:</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя*">
+          <label for="surname" class="filter__label">Фамилия:</label>
+          <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+          <label for="middle-name" class="filter__label">Отчество:</label>
+          <input type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="filter__phone">
+          <legend class="filter__title">Тел</legend>
+          <label for="phone" class="filter__label--hidden">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+        </fieldset>
+        <fieldset class="filter__email">
+          <legend class="filter__title">E-mail</legend>
+          <label for="email" class="filter__label--hidden">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="filter__more">
+          <legend class="filter__title">Доп</legend>
+          <label for="more" class="filter__label--hidden">Дополнительно</label>
+          <textarea name="more" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="filter__tip">*Поля обязательны для заполнения</p>
+        <button class="btn" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="social">
+        <a href="#" class="social__btn">Инстаграмм</a>
+        <a href="#" class="social__btn">Фейсбук</a>
+        <a href="#" class="social__btn">Твиттер</a>
+      </section>
+      <section class="copyright">
+        <b>Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <img src="http://placekitten.com/27/34">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
