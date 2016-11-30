@@ -2,109 +2,104 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
       <div class="logo">
-        <img src="http://placekitten.com/86/35" width="86" height="35" alt="Мишка">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </div>
+      <span class="page-header__menu-icon  page-header__menu-icon--hamburger"></span>
       <nav class="menu">
-        <span class="menu--icon"></span>
         <ul class="menu__list">
-          <li class="menu__item">Каталог товаров</li>
-          <li class="menu__item">Вязание на заказ</li>
-          <li class="menu__item--search">Поиск по сайту</li>
-          <li class="menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__list-item">Каталог товаров</li>
+          <li class="menu__list-item">Вязание на заказ</li>
+          <li class="menu__list-item  menu__list-item--search">Поиск по сайту</li>
+          <li class="menu__list-item  menu__list-item--cart">Корзина: пока пуста</li>
         </ul>
       </nav>
-        <h1 class="slogan">Милые штуки ручной работы для дома</h1>
-      <article class="category">
+    </header>
+    <main>
+      <section class="slogan">
+        <h1>Милые штуки ручной работы для дома</h1>
+      </section>
+      <section class="category">
         <ul class="category__list">
-          <li class="category__item">
-            <a class="category__link" href="#">
-              <div class="category__info">
-                <p class="category__info-title">Предметы  интерьера</p>
-                <span class="category__info-icon"></span>
+          <li class="category__list-item">
+            <a class="category__list-item-link" href="#">
+              <div class="category__list-item-info  category__list-item-info--chandelier">
+              Предметы интерьера
               </div>
             </a>
           </li>
-          <li class="category__item">
-            <a class="category__link" href="#">
-              <div class="category__info">
-                <p class="category__info-title">Детские  игрушки</p>
-                <span class="category__info-icon"></span>
+          <li class="category__list-item">
+            <a class="category__list-item-link" href="#">
+              <div class="category__list-item-info  category__list-item-info--toys">
+              Детские игрушки
               </div>
             </a>
           </li>
         </ul>
-      </article>
-    </header>
-    <main>
+      </section>
       <article class="week-item">
         <h2 class="week-item__title">Вязаные корзинки</h2>
         <p class="week-item__subtitle">Товар недели</p>
         <p class="week-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <div class="week-item__table-feature">
           <ul class="week-item__table-list">
-            <li class="week-item__table-item">Цвет</li>
-            <li class="week-item__table-item">"Тиффани"/серый</li>
+            <li class="week-item__table-list-item">Цвет</li>
+            <li class="week-item__table-list-item">"Тиффани"/серый</li>
           </ul>
           <ul class="week-item__table-list">
-            <li class="week-item__table-item">Диаметр</li>
-            <li class="week-item__table-item">25см</li>
+            <li class="week-item__table-list-item">Диаметр</li>
+            <li class="week-item__table-list-item">25см</li>
           </ul>
           <ul class="week-item__table-list">
-            <li class="week-item__table-item">Высота</li>
-            <li class="week-item__table-item">15см</li>
+            <li class="week-item__table-list-item">Высота</li>
+            <li class="week-item__table-list-item">15см</li>
           </ul>
         </div>
-        <figure class="week-item__foto">
-          <p><img src="http://placekitten.com/260/315"></p>
-          <figcaption class="week-item__foto-price">Цена: 990 руб.</figcaption>
-        </figure>
+        <div class="week-item__foto">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки">
+          <p class="week-item__foto-price">Цена: 990 руб.</p>
+        </div>
         <a class="button" href="#">Заказать</a>
-        <svg></svg>
       </article>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item  about-us__list-item--flower">
             <p class="about-us__item-text">Экологически  чистые материалы</p>
           </li>
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item  about-us__list-item--money">
             <p class="about-us__item-text">Скандинавский стиль  по российской цене</p>
           </li>
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item  about-us__list-item--heart">
             <p class="about-us__item-text">Увеличивает лайки на фотографиях</p>
           </li>
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item  about-us__list-item--tangle">
             <p class="about-us__item-text">Связано вручную с  любовью и умилением</p>
           </li>
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item  about-us__list-item--rocket">
             <p class="about-us__item-text">Поддержка отечественного производителя</p>
           </li>
-          <li class="about-us__item">
-            <img src="http://placekitten.com/33/38">
+          <li class="about-us__list-item about-us__list-item--gift">
             <p class="about-us__item-text">Поставляется в  подарочной упаковке</p>
           </li>
         </ul>
       </section>
       <section class="feedback">
         <h2 class="feedback__title">Отзывы</h2>
-        <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          <footer class="feedback__source">
+        <blockquote class="feedback__text">
+          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="feedback__source">
             <b>Анастасия Красильникова</b> @misssssiskras
-          </footer>
+          </cite>
         </blockquote>
-        <div class="feedback__prevnext">
-          <a class="feedback__prev" href="#"><svg></svg></a>
-          <a class="feedback__next" href="#"><svg></svg></a>
+        <div class="feedback__controls">
+          <a class="feedback__controls--prev" href="#"></a>
+          <a class="feedback__controls--next" href="#"></a>
         </div>
         <a class="button" href="#">Написать</a>
         <svg></svg>
@@ -112,17 +107,40 @@
       <section class="contacts">
         <b>Контакты</b>
         <div class="contacts__data">
-          <p class="contacts__title">e-mail:</p>
-          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          <p class="contacts__title">адрес:</p>
-          <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          <ul class="contacts__data-list">
+            <li class="contacts__data-list-item">e-mail:</li>
+            <li class="contacts__data-list-item">
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </li>
+          </ul>
+          <ul class="contacts__data-list">
+            <li class="contacts__data-list-item">адрес:</li>
+            <li class="contacts__data-list-item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </li>
+          </ul>
         </div>
         <div class="contacts__map">
-          <img src="http://placekitten.com/320/457" width="320" height="457">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457">
         </div>
         <a class="button" href="#">Напишите нам</a>
       </section>
-      <section class="popup">
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <a href="#" class="social__btn">Инстаграмм</a>
+        <a href="#" class="social__btn">Фейсбук</a>
+        <a href="#" class="social__btn">Твиттер</a>
+      </div>
+      <div class="copyright">
+        <b>Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <img src="">
+        </a>
+      </div>
+    </footer>
+
+
+    <section class="popup">
         <p class="popup__title">Добавить  в корзину</p>
         <p class="popup__subtitle">Выберите размер:</p>
         <ul class="popup__list">
@@ -132,19 +150,7 @@
         </ul>
         <a class="button--color" href="#">Добавить</a>
       </section>
-    </main>
-    <footer class="page-footer">
-      <section class="social">
-        <a href="#" class="social__btn">Инстаграмм</a>
-        <a href="#" class="social__btn">Фейсбук</a>
-        <a href="#" class="social__btn">Твиттер</a>
-      </section>
-      <section class="copyright">
-        <b>Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <img src="http://placekitten.com/27/34">
-        </a>
-      </section>
-    </footer>
+
+
   </body>
 </html>

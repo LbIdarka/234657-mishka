@@ -2,68 +2,55 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Каталог Mishka</title>
   </head>
   <body>
     <header class="inner-header">
       <div class="logo">
-        <a href="index.html"><img src="http://placekitten.com/86/35" width="86" height="35" alt="Мишка"></a>
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
       </div>
+      <span class="inner-header__menu-icon  inner-header__menu-icon--hamburger"></span>
       <nav class="menu">
-        <span class="menu--icon"></span>
         <ul class="menu__list">
-          <li class="menu__item">Каталог товаров</li>
-          <li class="menu__item">Вязание на заказ</li>
-          <li class="menu__item--search">Поиск по сайту</li>
-          <li class="menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__list-item">Каталог товаров</li>
+          <li class="menu__list-item">Вязание на заказ</li>
+          <li class="menu__list-item  menu__list-item--search">Поиск по сайту</li>
+          <li class="menu__list-item  menu__list-item--cart">Корзина: пока пуста</li>
         </ul>
       </nav>
-      <div class="inner-header__title">
-        <h1>Каталог товаров</h1>
-      </div>
     </header>
     <main class="inner-main">
-      <article class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img src="http://placekitten.com/260/195" width="260" height="195" alt="Зайчик-попрыгайчик">
-            <p class="catalog__item-title">Зайчик-попрыгайчик</p>
-            <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-            <b class="catalog__item-price">1 200 руб.</b>
-            <span class="catalog__item-cart"></span>
-          </li>
-          <li class="catalog__item">
-            <img src="http://placekitten.com/260/195" width="260" height="195" alt="Корзинка для белья">
-            <p class="catalog__item-title">Корзинка для белья</p>
-            <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-            <b class="catalog__item-price">690 руб.</b>
-            <span class="catalog__item-cart"></span>
-          </li>
-          <li class="catalog-item">
-            <img src="http://placekitten.com/260/195" width="260" height="195" alt="Большая корзинка для игрушек">
-            <p class="catalog__item-title">Большая корзинка для игрушек</p>
-            <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
-            <b class="catalog__item-price">1 500 руб.</b>
-            <span class="catalog__item-cart"></span>
-          </li>
-        </ul>
-      </article>
-      <article class="video">
-        <img src="http://placekitten.com/32/22">
-        <p class="video__title">Процесс производства</p>
-        <video src=""></video>
+      <section class="inner-main__title">
+        <h1>Каталог товаров</h1>
+      </section>
+      <section class="catalog">
+        <article class="catalog__item">
+          <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <p class="catalog__item-title">Зайчик-попрыгайчик</p>
+          <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
+          <b class="catalog__item-price  catalog__item-price--cart">1 200 руб.</b>
+        </article>
+        <article class="catalog__item">
+          <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+          <p class="catalog__item-title">Корзинка для белья</p>
+          <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
+          <b class="catalog__item-price  catalog__item-price--cart">690 руб.</b>
+        </article>
+        <article class="catalog-item">
+          <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+          <p class="catalog__item-title">Большая корзинка для игрушек</p>
+          <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+          <b class="catalog__item-price  catalog__item-price--cart">1 500 руб.</b>
+        </article>
+      </section>
+      <section class="video">
+        <p class="video__title  video__title--camera">Процесс производства</p>
+        <img src="img/video-mobile@1x.jpg">
         <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="button" href="#">Сделать заказ</a>
-      </article>
-      <section class="popup">
-        <p class="popup__title">Добавить  в корзину</p>
-        <p class="popup__subtitle">Выберите размер:</p>
-        <ul class="popup__list">
-          <li class="popup__item-size">S</li>
-          <li class="popup__item-size">M</li>
-          <li class="popup__item-size">L</li>
-        </ul>
-        <a class="button--color" href="#">Добавить</a>
       </section>
     </main>
       <footer class="page-footer">
@@ -79,5 +66,18 @@
         </a>
       </section>
     </footer>
+
+    <section class="popup">
+        <p class="popup__title">Добавить  в корзину</p>
+        <p class="popup__subtitle">Выберите размер:</p>
+        <ul class="popup__list">
+          <li class="popup__item-size">S</li>
+          <li class="popup__item-size">M</li>
+          <li class="popup__item-size">L</li>
+        </ul>
+        <a class="button--color" href="#">Добавить</a>
+      </section>
+
+
   </body>
 </html>

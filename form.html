@@ -2,29 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Форма заказа</title>
   </head>
   <body>
     <header class="form-header">
       <div class="logo">
-        <a href="index.html"><img src="http://placekitten.com/86/35" width="86" height="35" alt="Мишка"></a>
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
       </div>
+      <span class="form-header__menu-icon  form-header__menu-icon--hamburger"></span>
       <nav class="menu">
-        <span class="menu__icon"></span>
         <ul class="menu__list">
-          <li class="menu__item">Каталог товаров</li>
-          <li class="menu__item">Вязание на заказ</li>
-          <li class="menu__item--search">Поиск по сайту</li>
-          <li class="menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__list-item">Каталог товаров</li>
+          <li class="menu__list-item">Вязание на заказ</li>
+          <li class="menu__list-item  menu__list-item--search">Поиск по сайту</li>
+          <li class="menu__list-item  menu__list-item--cart">Корзина: пока пуста</li>
         </ul>
       </nav>
-      <div class="form-header__title">
-        <h1>Вязание на заказ</h1>
-      </div>
     </header>
     <main class="form-main">
+      <section class="form-main__title">
+        <h1>Вязание на заказ</h1>
+      </section>
       <p class="form-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form  class="filter"action="#" method="get">
+      <form  class="filter" action="#" method="get">
         <fieldset class="filter__type">
           <legend class="filter__title">Тип</legend>
           <ul class="filter__list">
@@ -89,7 +92,7 @@
         <fieldset class="filter__more">
           <legend class="filter__title">Доп</legend>
           <label for="more" class="filter__label--hidden">Дополнительно</label>
-          <textarea name="more" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+          <textarea id="more" name="more" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </fieldset>
         <p class="filter__tip">*Поля обязательны для заполнения</p>
         <button class="btn" type="submit">Отправить заказ</button>
