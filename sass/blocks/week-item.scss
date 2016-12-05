@@ -1,0 +1,20 @@
+.week-item {
+  @include conteiner;
+  @include font-style(15px, 24px, 400, #444444);
+  outline: $outline;
+}
+
+.week-item__subtitle {
+  @include font-style(17px, 16px, 700, #63d1bb);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.week-item__table-list-item {
+  @include font-style(15px, 20px, 400, #444444);
+}
+
+.week-item__foto-price {
+  @include font-style(17px, 24px, 700, #444444);
+  text-align: center;
+}

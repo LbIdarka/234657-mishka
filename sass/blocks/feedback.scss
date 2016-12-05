@@ -1,0 +1,8 @@
+.feedback {
+  @include conteiner;
+  outline: $outline;
+}
+
+.feedback__text {
+  @include font-style(15px, 30px, 400, #444444);
+}

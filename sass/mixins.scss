@@ -1,9 +1,12 @@
-
-
 @mixin font-style($font-size, $line-height, $font-weight, $color) {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
   color: $color;
+}
+
+@mixin conteiner {
+  width: 90%;
+  margin: 0 auto;
 }
