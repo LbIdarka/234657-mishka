@@ -1,7 +1,10 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
 body {
+  @include font-style(16px, 24px, 400, #b4b4b4);
   background: $color-bg;
-  font-family: $font-stack;
-  font-size: 15px;
-  line-height: 24px;
-  color: $text-color;
+  padding: 50px;
+
 }
