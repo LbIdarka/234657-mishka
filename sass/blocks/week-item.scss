@@ -1,5 +1,4 @@
 .week-item {
-  @include conteiner;
   @include font-style(15px, 24px, 400, #444444);
   outline: $outline;
 }

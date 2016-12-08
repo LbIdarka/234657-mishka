@@ -1,6 +1,5 @@
 .button {
   display: block;
-  @include conteiner;
   padding: 19px;
   @include font-style(17px, 16px, 700, #444444);
   text-align: center;
