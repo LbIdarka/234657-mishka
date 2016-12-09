@@ -1,0 +1,43 @@
+.social {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 25px 0 28px;
+  }
+}
+
+@media ($tablet-widths) {
+
+  .social {
+    float: left;
+    width: 228px;
+    border-bottom: none;
+    padding: 51px 0 51px;
+
+    &__btn {
+      padding: 0;
+    }
+  }
+
+}
+
+@media ($desktop-widths) {
+
+  .social {
+    float: left;
+    width: 350px;
+    border-bottom: none;
+    padding: 51px 0 51px;
+
+    &__btn {
+      padding: 0;
+    }
+  }
+
+}
+
