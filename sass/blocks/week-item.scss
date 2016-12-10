@@ -4,7 +4,14 @@
   outline: $outline;
 }
 
+.week-item__title {
+  @include font-style(25px, 30px, 700, #000000);
+  text-align: left;
+  margin-bottom: 0;
+}
+
 .week-item__subtitle {
+  margin-top: 0;
   @include font-style(17px, 16px, 700, #63d1bb);
   text-transform: uppercase;
   text-align: left;
@@ -17,4 +24,39 @@
 .week-item__foto-price {
   @include font-style(17px, 24px, 700, #444444);
   text-align: center;
+}
+
+
+@media ($tablet-widths) {
+
+  .week-item {
+  @include clearfix;
+  }
+
+  .week-item__title {
+    float: left;
+    @include font-style(43px, 50px, 700, #000000);
+  }
+
+  .week-item__subtitle {
+    float: right;
+    width: 101px;
+  }
+
+  .week-item__description {
+    float: left;
+    width: 339px;
+  }
+
+  .week-item__foto {
+    float: right;
+  }
+
+  .button {
+    float: left;
+  }
+}
+
+@media ($desktop-widths) {
+
 }

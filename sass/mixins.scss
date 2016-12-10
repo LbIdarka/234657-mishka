@@ -7,6 +7,24 @@
 }
 
 @mixin conteiner {
-  width: 90%;
+  width: 260px;
   margin: 0 auto;
+
+    @media ($tablet-widths) {
+    width: 668px;
+    }
+
+    @media ($desktop-widths) {
+    width: 1050px;
+    }
 }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+

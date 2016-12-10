@@ -1,0 +1,190 @@
+@import "mixins.scss";
+
+.menu {
+  display: block;
+  margin: 0 auto;
+}
+
+.menu__list-item {
+
+  padding-top: 37px;
+  padding-bottom: 37px;
+  @include font-style(17px, 24px, 700, #000000);
+  border-bottom: $border;
+  text-align: center;
+
+  &:first-child {
+    border-top: $border;
+  }
+}
+
+.menu__list-users-item {
+  @extend .menu__list-item;
+
+    &:first-child {
+    border-top: none;
+  }
+
+    &:nth-child(2) {
+    border-bottom: none;
+  }
+}
+
+.menu__list-new {
+  @extend .menu__list-item;
+  display: none;
+}
+
+@media ($tablet-widths){
+
+  .menu {
+    @include clearfix;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu__list {
+    float: left;
+    width: 320px;
+    margin-top: 118px;
+    border-top: $border;
+  }
+
+  .menu__list-item {
+    display: inline-block;
+    width: 160px;
+    padding-top: 24px;
+    @include font-style(15px, 24px, 700, #000000);
+    text-align: left;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .menu__list-users {
+    float: right;
+    width: 347px;
+    border-bottom: $border;
+  }
+
+  .menu__list-users-item {
+    display: inline-block;
+    width: 265px;
+    padding: 35px 0;
+    font-size: 17px;
+    text-align: right;
+
+    &:first-child {
+      width: 80px;
+      border-right: $border;
+      border-left: $border;
+      border-bottom: none;
+    }
+  }
+
+  .menu__list-new {
+    display: block;
+    float: right;
+    width: 264px;
+    font-weight: 400;
+    text-align: right;
+
+    .menu__list-new-item:first-child {
+      display: none;
+    }
+
+    .menu__list-new-item:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+
+  .menu {
+    display: block;
+    position: relative;
+    @include clearfix;
+  }
+
+  .menu__list {
+    float: left;
+    width: 350px;
+    margin: 0;
+  }
+
+  .menu__list-item {
+    display: inline-block;
+    padding: 35px 0;
+    @include font-style(17px, 24px, 700, #000000);
+
+
+    &:first-child {
+      width: 185px;
+      text-align: left;
+      border-right: $border;
+    }
+
+    .menu__list-item:last-child {
+      width: 160px;
+      text-align: right;
+    }
+  }
+
+  .menu__list-users {
+    float: right;
+    width: 350px;
+    border-bottom: none;
+  }
+
+  .menu__list-users-item {
+    display: inline-block;
+    padding: 24px 0;
+
+    &:first-child {
+      width: 82px;
+      border-right: $border;
+      border-left: $border;
+    }
+
+    &:last-child {
+      width: 266px;
+    }
+  }
+
+  .menu__list-new {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+    border-top: $border;
+  }
+
+  .menu__list-new-item {
+    display: block;
+    float: left;
+    width: 175px;
+    padding-top: 24px;
+    @include clearfix;
+    @include font-style(15px, 24px, 700, #000000);
+
+    .menu__list-new-item:first-child {
+      display: block;
+    }
+
+    .menu__list-new-item:nth-child(2) {
+      display: block;
+    }
+
+    &:last-child {
+      float: right;
+      width: 266px;
+      font-weight: 400;
+      color: $text-color;
+      text-align: right;
+    }
+  }
+}
+

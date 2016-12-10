@@ -1,6 +1,35 @@
 @import "variables.scss";
 
 .page-header {
-  @include conteiner;
   outline: $outline;
 }
+
+@media ($tablet-widths){
+
+  .page-header {
+    display: block;
+    width: auto;
+    margin: 0;
+
+
+    .conteiner {
+      @include conteiner;
+      @include clearfix;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    display: block;
+    width: auto;
+    margin: 0;
+
+
+    .conteiner {
+      @include conteiner;
+      @include clearfix;
+    }
+  }
+}
+
