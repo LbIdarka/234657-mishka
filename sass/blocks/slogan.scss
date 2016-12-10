@@ -1,5 +1,46 @@
 .slogan {
-  background: url("/img/hero-mobile@1x.jpg") no-repeat;
+  height: 283px;
+  background: url("/img/hero-mobile@1x.jpg") no-repeat 50%;
   background-size: cover;
   outline: $outline;
+}
+
+h1 {
+  @include conteiner;
+  @include font-style(27px, 30px, 700, #000000);
+  text-align: center;
+}
+
+
+@media ($tablet-widths) {
+
+  .slogan {
+    position: absolute;
+    width: 100%;
+    height: 743px;
+    z-index: 1;
+    top: 119px;
+    left: 0;
+  }
+
+  h1 {
+    @include font-style(43px, 50px, 700, #000000);
+    text-align: center;
+  }
+}
+
+@media ($desktop-widths) {
+
+  .slogan {
+    position: absolute;
+    height: 743px;
+    z-index: 1;
+    top: 97px;
+    left: 0;
+  }
+
+  h1 {
+    @include font-style(53px, 57px, 700, #000000);
+    text-align: center;
+  }
 }

@@ -40,6 +40,7 @@
   .menu {
     @include clearfix;
     position: relative;
+    z-index: 2;
   }
 
   .menu__list {
@@ -95,7 +96,7 @@
     }
 
     .menu__list-new-item:nth-child(2) {
-        display: none;
+      display: none;
     }
   }
 }
@@ -174,7 +175,7 @@
     }
 
     .menu__list-new-item:nth-child(2) {
-        display: block;
+      display: block;
     }
 
     &:last-child {

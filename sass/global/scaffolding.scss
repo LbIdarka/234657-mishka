@@ -9,16 +9,6 @@ body {
   min-width: 320px;
 }
 
-h1 {
-  @include font-style(25px, 30px, 700, #000000);
-  text-align: center;
-}
-
-h2 {
-  @include font-style(27px, 30px, 700, #000000);
-  text-align: left;
-}
-
 ul {
   list-style: none;
   padding: 0;
