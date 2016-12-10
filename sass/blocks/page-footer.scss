@@ -1,0 +1,8 @@
+@import 'variables.scss';
+
+.page-footer {
+  @include conteiner;
+  background-color: $bg-title-footer;
+  height: 160px;
+  outline: $outline;
+}

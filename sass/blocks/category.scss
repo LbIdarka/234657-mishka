@@ -1,0 +1,16 @@
+.category {
+  width: 100%;
+  @include conteiner;
+  outline: $outline;
+}
+
+.category__list-item {
+  width: 100%;
+  @include font-style(19px, 24px, 700, #ffffff);
+  background: $color-green;
+  outline: darkblue;
+}
+
+.category__list-item:last-child {
+  background: #56c3b2;
+}

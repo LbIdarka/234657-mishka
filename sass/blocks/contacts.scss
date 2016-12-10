@@ -1,0 +1,16 @@
+.contacts {
+  outline: $outline;
+}
+
+.contacts__data {
+  @include conteiner;
+}
+
+.contacts__data-list-item {
+@include font-style(15px, 30px, 400, #444444);
+}
+
+.contacts__map {
+width: 100%;
+
+}

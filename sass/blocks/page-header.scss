@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+.page-header {
+  @include conteiner;
+  outline: $outline;
+}
