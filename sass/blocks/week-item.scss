@@ -30,33 +30,45 @@
 @media ($tablet-widths) {
 
   .week-item {
-  @include clearfix;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .week-item__title {
-    float: left;
+
     @include font-style(43px, 50px, 700, #000000);
   }
 
   .week-item__subtitle {
-    float: right;
+
     width: 101px;
   }
 
   .week-item__description {
-    float: left;
+
     width: 339px;
   }
 
   .week-item__foto {
-    float: right;
+
   }
 
   .button {
-    float: left;
+
   }
 }
 
 @media ($desktop-widths) {
+
+  .week-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .week-item__subtitle {
+    order: -1;
+  }
 
 }

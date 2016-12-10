@@ -28,8 +28,11 @@
     margin-top: 538px;
   }
 
+  .category__list {
+    display: flex;
+  }
+
   .category__list-item {
-    display: inline-block;
     width: 50%;
   }
 

@@ -19,7 +19,11 @@
 }
 
 .menu__list-users-item {
-  @extend .menu__list-item;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  @include font-style(17px, 24px, 700, #000000);
+  border-bottom: $border;
+  text-align: center;
 
     &:first-child {
     border-top: none;
@@ -38,21 +42,20 @@
 @media ($tablet-widths){
 
   .menu {
-    @include clearfix;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    outline: 1px solid green;
   }
 
   .menu__list {
-    float: left;
-    width: 320px;
-    margin-top: 118px;
+    display: flex;
     border-top: $border;
   }
 
   .menu__list-item {
-    display: inline-block;
-    width: 160px;
+//    width: 160px;
     padding-top: 24px;
     @include font-style(15px, 24px, 700, #000000);
     text-align: left;
@@ -64,20 +67,16 @@
   }
 
   .menu__list-users {
-    float: right;
-    width: 347px;
+    display: flex;
     border-bottom: $border;
   }
 
   .menu__list-users-item {
-    display: inline-block;
-    width: 265px;
     padding: 35px 0;
     font-size: 17px;
     text-align: right;
 
     &:first-child {
-      width: 80px;
       border-right: $border;
       border-left: $border;
       border-bottom: none;
@@ -85,9 +84,7 @@
   }
 
   .menu__list-new {
-    display: block;
-    float: right;
-    width: 264px;
+    display: flex;
     font-weight: 400;
     text-align: right;
 

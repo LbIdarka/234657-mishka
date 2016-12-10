@@ -8,29 +8,21 @@
 @media ($tablet-widths){
 
   .page-header {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: auto;
-    margin: 0;
-
-
-    .conteiner {
-      @include conteiner;
-      @include clearfix;
-    }
+    outline: $outline;
   }
+
+
+
 }
 
 @media ($desktop-widths) {
   .page-header {
-    display: block;
+    display: flex;
     width: auto;
-    margin: 0;
-
-
-    .conteiner {
-      @include conteiner;
-      @include clearfix;
-    }
   }
 }
 
