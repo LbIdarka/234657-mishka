@@ -25,7 +25,7 @@
     position: relative;
     z-index: 3;
     @include conteiner;
-    margin-top: 538px;
+    margin-top: -118px;
   }
 
   .category__list {
@@ -42,10 +42,6 @@
 }
 
 @media ($desktop-widths) {
-
-  .category {
-    margin-top: 575px;
-  }
 
   .category__list-item-info{
     padding-right: 330px;

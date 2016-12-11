@@ -1,10 +1,16 @@
 @import 'variables.scss';
 
 .page-footer {
-  background-color: $bg-title-footer;
   height: 160px;
+  background-color: $bg-title-footer;
   outline: $outline;
 }
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
 .page-footer__logo {
   display: none;
@@ -12,9 +18,13 @@
 
 @media ($tablet-widths) {
 
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .page-footer__logo {
     display: block;
-    float: left;
     width: 220px;
     padding: 51px 0 51px;
   }
@@ -24,7 +34,6 @@
 
   .page-footer__logo {
     display: block;
-    float: left;
     width: 350px;
     padding: 51px 0 51px;
   }

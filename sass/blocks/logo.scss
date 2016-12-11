@@ -1,4 +1,5 @@
 .logo {
+  display: block;
   padding: 22px 50px;
   text-align: center;
 }
@@ -6,16 +7,19 @@
 @media ($tablet-widths){
 
   .logo {
+//    width: 370px;
+    align-self: flex-start;
+    box-sizing: border-box;
     border: none;
   }
 }
 
 @media ($desktop-widths) {
   .logo {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 35%;
-    padding: 24px 0;
+//    display: block;
+//    position: absolute;
+//    top: 0;
+//    left: 35%;
+//    padding: 24px 0;
   }
 }

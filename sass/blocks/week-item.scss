@@ -36,22 +36,22 @@
   }
 
   .week-item__title {
-
+    outline: 1px solid green;
     @include font-style(43px, 50px, 700, #000000);
   }
 
   .week-item__subtitle {
-
+    outline: 1px solid green;
     width: 101px;
   }
 
   .week-item__description {
-
+    outline: 1px solid green;
     width: 339px;
   }
 
   .week-item__foto {
-
+    outline: 1px solid green;
   }
 
   .button {

@@ -3,6 +3,7 @@
 .menu {
   display: block;
   margin: 0 auto;
+  @include conteiner;
 }
 
 .menu__list-item {
@@ -46,11 +47,13 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    justify-content: space-around;
     outline: 1px solid green;
   }
 
   .menu__list {
     display: flex;
+    order: 3;
     border-top: $border;
   }
 
@@ -68,6 +71,7 @@
 
   .menu__list-users {
     display: flex;
+    order: 2;
     border-bottom: $border;
   }
 
@@ -85,35 +89,35 @@
 
   .menu__list-new {
     display: flex;
+    order: 4;
     font-weight: 400;
     text-align: right;
+  }
 
-    .menu__list-new-item:first-child {
-      display: none;
-    }
+  .menu__list-new-item:first-child {
+    display: none;
+  }
 
-    .menu__list-new-item:nth-child(2) {
-      display: none;
-    }
+  .menu__list-new-item:nth-child(2) {
+    display: none;
   }
 }
 
 @media ($desktop-widths) {
 
   .menu {
-    display: block;
+    display: flex;
     position: relative;
-    @include clearfix;
   }
 
   .menu__list {
-    float: left;
+    display: flex;
+    order: 1;
     width: 350px;
     margin: 0;
   }
 
   .menu__list-item {
-    display: inline-block;
     padding: 35px 0;
     @include font-style(17px, 24px, 700, #000000);
 
@@ -131,13 +135,13 @@
   }
 
   .menu__list-users {
-    float: right;
+    display: flex;
+    order: 3;
     width: 350px;
     border-bottom: none;
   }
 
   .menu__list-users-item {
-    display: inline-block;
     padding: 24px 0;
 
     &:first-child {
@@ -152,8 +156,8 @@
   }
 
   .menu__list-new {
-    display: block;
-    float: left;
+    display: flex;
+    order: 4;
     width: 100%;
     padding: 0;
     border-top: $border;
@@ -161,27 +165,25 @@
 
   .menu__list-new-item {
     display: block;
-    float: left;
     width: 175px;
     padding-top: 24px;
     @include clearfix;
     @include font-style(15px, 24px, 700, #000000);
 
-    .menu__list-new-item:first-child {
-      display: block;
-    }
-
-    .menu__list-new-item:nth-child(2) {
-      display: block;
-    }
-
     &:last-child {
-      float: right;
+      flex-grow: 1;
       width: 266px;
       font-weight: 400;
       color: $text-color;
       text-align: right;
     }
+  }
+
+  .menu__list-new-item:first-child {
+    display: block;
+  }
+  .menu__list-new-item:nth-child(2) {
+    display: block;
   }
 }
 

@@ -1,7 +1,50 @@
 .feedback {
+  @include conteiner;
   outline: $outline;
 }
 
+.feedback__title {
+  @include font-style(25px, 30px, 700, #000000);
+}
+
 .feedback__text {
+  margin: 0;
   @include font-style(15px, 30px, 400, #444444);
+}
+
+.feedback__source {
+  @include font-style(18px, 24px, 400, #000000);
+  font-style: normal;
+
+  b {
+    font-weight: normal;
+  }
+}
+
+@media ($tablet-widths) {
+
+  .feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__title {
+    @include font-style(43px, 50px, 700, #000000);
+  }
+
+  .feedback__text {
+    order: 3;
+    width: 100%;
+    @include font-style(17px, 30px, 400, #444444);
+  }
+
+  .feedback__controls {
+    order: 5;
+  }
+
+  .button {
+    order: 2;
+    align-self: center;
+  }
 }

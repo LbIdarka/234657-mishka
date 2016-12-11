@@ -1,6 +1,5 @@
 .copyright {
-  width: auto;
-  margin: 0 auto;
+  @include conteiner;
   padding-top: 28px;
   padding-bottom: 24px;
   @include font-style(19px, 18px, 700, #000000);
@@ -18,7 +17,6 @@
 @media ($tablet-widths) {
 
   .copyright {
-    float: right;
     width: 220px;
     padding: 51px 0 51px;
   }
@@ -27,7 +25,6 @@
 @media ($desktop-widths) {
 
   .copyright {
-    float: right;
     width: 350px;
     padding: 51px 0 51px;
   }
