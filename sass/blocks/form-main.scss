@@ -1,0 +1,37 @@
+.form-main__title {
+  display: flex;
+  min-height: 177px;
+  background-color: $bg-title-footer;
+}
+
+h1 {
+  @include font-style(27px, 30px, 700, #000000);
+  margin: auto;
+}
+
+.form-main__description {
+  @include conteiner;
+  @include font-style(13px, 24px, 400, #444444);
+  margin-bottom: 27px;
+  margin-top: 27px;
+}
+
+@media ($tablet-widths) {
+
+  .form-main__title {
+    position: relative;
+    min-height: 225px;
+    margin-top: -87px;
+    z-index: 1;
+  }
+
+  h1 {
+    @include font-style(43px, 50px, 700, #000000);
+  }
+
+  .form-main__description {
+    @include font-style(17px, 30px, 400, #444444);
+    margin-top: 82px;
+    margin-bottom: 66px;
+  }
+}
