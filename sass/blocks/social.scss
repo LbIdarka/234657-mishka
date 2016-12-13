@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  width: 260px;
+  justify-content: center;
+  @include conteiner;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__btn {
+    padding: 25px 0 28px;
+  }
+}
+
+@media ($tablet-widths) {
+
+  .social {
+
+    width: 228px;
+    border-bottom: none;
+    padding: 51px 0 51px;
+
+    &__btn {
+      padding: 0;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+
+  .social {
+    width: 350px;
+    border-bottom: none;
+    padding: 51px 0 51px;
+
+    &__btn {
+      padding: 0;
+    }
+  }
+}

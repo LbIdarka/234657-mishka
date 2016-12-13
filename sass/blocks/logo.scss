@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  padding: 22px 50px;
+  text-align: center;
+}
+
+@media ($tablet-widths){
+
+  .logo {
+    display: flex;
+    width: 367px;
+    min-height: 100px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    align-self: center;
+    box-sizing: border-box;
+    border-bottom: $border;
+    border-right: $border;
+  }
+}
+
+@media ($desktop-widths) {
+  .logo {
+    order: 2;
+    flex-grow: 1;
+    justify-content: center;
+    border-bottom: none;
+  }
+}

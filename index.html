@@ -2,23 +2,48 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
+    <nav class="menu">
       <div class="logo">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-      </div>
       <span class="page-header__menu-icon  page-header__menu-icon--hamburger"></span>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">Каталог товаров</li>
-          <li class="menu__list-item">Вязание на заказ</li>
-          <li class="menu__list-item  menu__list-item--search">Поиск по сайту</li>
-          <li class="menu__list-item  menu__list-item--cart">Корзина: пока пуста</li>
-        </ul>
-      </nav>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="menu__list-users">
+        <li class="menu__list-users-item  menu__list-users-item--search">
+          <a href="#">
+            <p class="menu__list-users-item-hidden">Поиск по сайту</p>
+          </a>
+        </li>
+        <li class="menu__list-users-item  menu__list-users-item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="menu__list-new">
+        <li class="menu__list-new-item">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="menu__list-new-item">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="menu__list-new-item">
+          <a href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+    </nav>
     </header>
     <main>
       <section class="slogan">
@@ -45,24 +70,26 @@
       <article class="week-item">
         <h2 class="week-item__title">Вязаные корзинки</h2>
         <p class="week-item__subtitle">Товар недели</p>
-        <p class="week-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <div class="week-item__table-feature">
-          <ul class="week-item__table-list">
-            <li class="week-item__table-list-item">Цвет</li>
-            <li class="week-item__table-list-item">"Тиффани"/серый</li>
-          </ul>
-          <ul class="week-item__table-list">
-            <li class="week-item__table-list-item">Диаметр</li>
-            <li class="week-item__table-list-item">25см</li>
-          </ul>
-          <ul class="week-item__table-list">
-            <li class="week-item__table-list-item">Высота</li>
-            <li class="week-item__table-list-item">15см</li>
-          </ul>
+        <div class="week-item__description">
+          <p class="week-item__description-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <div class="week-item__table-feature">
+            <ul class="week-item__table-list">
+              <li class="week-item__table-list-item">Цвет</li>
+              <li class="week-item__table-list-item">"Тиффани"/серый</li>
+            </ul>
+            <ul class="week-item__table-list">
+              <li class="week-item__table-list-item">Диаметр</li>
+              <li class="week-item__table-list-item">25см</li>
+            </ul>
+            <ul class="week-item__table-list">
+              <li class="week-item__table-list-item">Высота</li>
+              <li class="week-item__table-list-item">15см</li>
+            </ul>
+          <p class="week-item__foto-price">Цена: 990 руб.</p>
+          </div>
         </div>
         <div class="week-item__foto">
           <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки">
-          <p class="week-item__foto-price">Цена: 990 руб.</p>
         </div>
         <a class="button" href="#">Заказать</a>
       </article>
@@ -104,8 +131,8 @@
         <a class="button" href="#">Написать</a>
       </section>
       <section class="contacts">
-        <b>Контакты</b>
         <div class="contacts__data">
+          <b>Контакты</b>
           <ul class="contacts__data-list">
             <li class="contacts__data-list-item">e-mail:</li>
             <li class="contacts__data-list-item">
@@ -119,25 +146,29 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" width="320" height="457">
+<!--          <img src="img/map-mobile@1x.jpg" width="320" height="457">-->
         </div>
         <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="social">
-        <a href="#" class="social__btn">Инстаграмм</a>
-        <a href="#" class="social__btn">Фейсбук</a>
-        <a href="#" class="social__btn">Твиттер</a>
-      </div>
-      <div class="copyright">
-        <b>Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <img src="">
-        </a>
+      <div class="conteiner">
+        <div class="page-footer__logo">
+          <img src="" width="102" height="34" alt="mishka">
+        </div>
+        <div class="social">
+          <a href="#" class="social__btn">Инстаграмм</a>
+          <a href="#" class="social__btn">Фейсбук</a>
+          <a href="#" class="social__btn">Твиттер</a>
+        </div>
+        <div class="copyright">
+          <b>Разработано</b>
+          <a class="copyright__logo" href="https://htmlacademy.ru/">
+            <img src="" width="27" height="34">
+          </a>
+        </div>
       </div>
     </footer>
-
 
     <section class="popup">
         <p class="popup__title">Добавить  в корзину</p>

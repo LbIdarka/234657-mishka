@@ -1,0 +1,25 @@
+.catalog {
+  @include conteiner;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media ($tablet-widths) {
+
+  .catalog {
+    margin-top: 83px;
+  }
+
+  .catalog-item {
+    flex-basis: 100%;
+  }
+}
+
+@media ($desktop-widths) {
+
+  .catalog {
+    margin-top: 132px;
+    flex-wrap: nowrap;
+  }
+}

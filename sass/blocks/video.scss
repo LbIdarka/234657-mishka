@@ -1,0 +1,45 @@
+.video {
+  @include conteiner;
+  border: $border;
+}
+
+.video__description-title {
+  @include font-style(17px, 24px, 700, #000000);
+}
+
+.video__description-info {
+  @include font-style(13px, 24px, 400, #444444);
+}
+
+.button {
+  width: 90%;
+}
+
+@media ($tablet-widths) {
+
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .video__description-title {
+  @include font-style(20px, 24px, 700, #000000);
+  }
+
+  .video__description-info {
+  @include font-style(15px, 30px, 400, #444444);
+  }
+}
+
+@media ($desktop-widths) {
+
+  .video {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+}
