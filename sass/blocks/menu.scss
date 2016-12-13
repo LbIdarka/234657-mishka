@@ -3,16 +3,17 @@
 .menu {
   display: block;
   margin: 0 auto;
-  @include conteiner;
+//  @include conteiner;
 }
 
 .menu__list-item {
 
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 76px;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
-  text-align: center;
+  text-align: left;
 
   &:first-child {
     border-top: $border;
@@ -22,9 +23,10 @@
 .menu__list-users-item {
   padding-top: 37px;
   padding-bottom: 37px;
+  padding-left: 76px;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
-  text-align: center;
+  text-align: left;
 
     &:first-child {
     border-top: none;
@@ -36,7 +38,11 @@
 }
 
 .menu__list-new {
-  @extend .menu__list-item;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 76px;
+  @include font-style(17px, 24px, 700, #000000);
+  border-bottom: $border;
   display: none;
 }
 
@@ -47,19 +53,20 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    justify-content: space-around;
-    outline: 1px solid green;
+    justify-content: flex-start;
   }
 
   .menu__list {
     display: flex;
+    width: 367px;
+    padding-left: 50px;
     order: 3;
-    border-top: $border;
+    box-sizing: border-box;
   }
 
   .menu__list-item {
-//    width: 160px;
-    padding-top: 24px;
+    padding: 23px 0;
+    flex-grow: 1;
     @include font-style(15px, 24px, 700, #000000);
     text-align: left;
     border: none;
@@ -73,25 +80,45 @@
     display: flex;
     order: 2;
     border-bottom: $border;
+    box-sizing: border-box;
   }
 
   .menu__list-users-item {
-    padding: 35px 0;
-    font-size: 17px;
+    padding-bottom: 39px;
+    padding-left: 0;
+    @include font-style(17px, 24px, 700, #000000);
     text-align: right;
+    box-sizing: border-box;
 
     &:first-child {
-      border-right: $border;
-      border-left: $border;
+      width: 84px;
       border-bottom: none;
     }
+
+     &:nth-child(2) {
+      width: 315px;
+      padding-right: 50px;
+      border-left: $border;
+    }
+  }
+
+  .menu__list-users-item-hidden {
+    font-size: 0;
   }
 
   .menu__list-new {
     display: flex;
     order: 4;
-    font-weight: 400;
-    text-align: right;
+    width: 399px;
+    padding: 0;
+    justify-content: flex-end;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .menu__list-new-item {
+    padding: 23px 50px 0;
+    @include font-style(15px, 24px, 400, $text-color);
   }
 
   .menu__list-new-item:first-child {
@@ -113,8 +140,9 @@
   .menu__list {
     display: flex;
     order: 1;
-    width: 350px;
+    width: 425px;
     margin: 0;
+    flex-grow: 1;
   }
 
   .menu__list-item {
@@ -138,16 +166,15 @@
     display: flex;
     order: 3;
     width: 350px;
+    flex-grow: 1;
     border-bottom: none;
   }
 
   .menu__list-users-item {
-    padding: 24px 0;
+    padding: 35px 0;
 
     &:first-child {
-      width: 82px;
-      border-right: $border;
-      border-left: $border;
+      width: 84px;
     }
 
     &:last-child {

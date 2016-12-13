@@ -7,19 +7,23 @@
 @media ($tablet-widths){
 
   .logo {
-//    width: 370px;
-    align-self: flex-start;
+    display: flex;
+    width: 367px;
+    min-height: 100px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    align-self: center;
     box-sizing: border-box;
-    border: none;
+    border-bottom: $border;
+    border-right: $border;
   }
 }
 
 @media ($desktop-widths) {
   .logo {
-//    display: block;
-//    position: absolute;
-//    top: 0;
-//    left: 35%;
-//    padding: 24px 0;
+    order: 2;
+    flex-grow: 1;
+    justify-content: center;
+    border-bottom: none;
   }
 }
