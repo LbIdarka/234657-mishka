@@ -11,6 +11,7 @@
     width: 367px;
     min-height: 100px;
     padding-left: 50px;
+    flex-grow: 1;
     justify-content: flex-start;
     align-self: center;
     box-sizing: border-box;
@@ -21,6 +22,7 @@
 
 @media ($desktop-widths) {
   .logo {
+    width: 326px;
     order: 2;
     flex-grow: 1;
     justify-content: center;

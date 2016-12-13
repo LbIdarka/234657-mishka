@@ -1,8 +1,7 @@
 .social {
   display: flex;
   width: 260px;
-  justify-content: center;
-  @include conteiner;
+  justify-content: space-around;
   border-bottom: 1px solid #e5e5e5;
 
   &__btn {
@@ -13,10 +12,10 @@
 @media ($tablet-widths) {
 
   .social {
-
     width: 228px;
     border-bottom: none;
     padding: 51px 0 51px;
+    flex-grow: 1;
 
     &__btn {
       padding: 0;

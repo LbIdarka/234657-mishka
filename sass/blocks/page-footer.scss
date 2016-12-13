@@ -1,15 +1,15 @@
 @import 'variables.scss';
 
 .page-footer {
-  height: 160px;
+  min-height: 160px;
   background-color: $bg-title-footer;
-  outline: $outline;
 }
 
 .conteiner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  align-items: center;
   }
 
 .page-footer__logo {
@@ -27,6 +27,7 @@
     display: block;
     width: 220px;
     padding: 51px 0 51px;
+    flex-grow: 1;
   }
 }
 
