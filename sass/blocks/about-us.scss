@@ -1,6 +1,5 @@
 .about-us {
   @include conteiner;
-  outline: $outline;
 }
 
 .about-us__title {
@@ -35,31 +34,41 @@
     padding-top: 60px;
     @include font-style(20px, 30px, 700, #000000);
 
-    &:first-child {
+    &:nth-child(3n+1) {
       order: 1;
     }
 
-    &:nth-child(2) {
+    &:nth-child(3n+2) {
+      order: 2;
+    }
+
+    &:nth-child(3n+3) {
       order: 3;
     }
 
-    &:nth-child(3) {
-    order: 3;
-    }
-
-    &:nth-child(4) {
-    order: 2;
-    }
-
-    &:nth-child(5) {
-    order: 4;
+    &:nth-child(-n+3) {
+      padding-right: 100px;
+      box-sizing: border-box;
     }
   }
 }
 
 @media ($desktop-widths) {
 
+  .about-us {
+    width: 648px;
+  }
+
   .about-us__title {
     @include font-style(53px, 57px, 700, #000000);
+  }
+
+  .about-us__list-item:nth-child(-n+3) {
+      padding-right: 106px;
+      box-sizing: border-box;
+    }
+
+  .about-us__list-item:nth-child(n+4) {
+    width: 274px;
   }
 }
