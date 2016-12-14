@@ -1,23 +1,42 @@
 .feedback {
   @include conteiner;
-  outline: $outline;
+  margin-top: 65px;
+  margin-bottom: 38px;
+
+  .button {
+  width: 100%;
+  }
 }
 
 .feedback__title {
   @include font-style(25px, 30px, 700, #000000);
 }
 
-.feedback__text {
+.feedback__blockquote {
   margin: 0;
   @include font-style(15px, 30px, 400, #444444);
+  margin-bottom: 35px;
 }
 
-.feedback__source {
+feedback__blockquote-source {
   @include font-style(18px, 24px, 400, #000000);
   font-style: normal;
+}
 
-  b {
-    font-weight: normal;
+.feedback__blockquote-controls {
+  display: flex;
+  width: 258px;
+  min-height: 50px;
+
+  &--prev {
+    width: 129px;
+    border: $border;
+  }
+
+  &--next {
+    width: 129px;
+    border: $border;
+    border-left: none;
   }
 }
 
@@ -25,26 +44,69 @@
 
   .feedback {
     display: flex;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 86px;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: url("/img/review@1x.jpg") no-repeat 0 0;
+
+    .button {
+    flex-basis: 174px;
+    order: 2;
+    margin-top: 79px;
+    margin-right: 6.5104%;
+    align-self: flex-start;
+    }
   }
 
   .feedback__title {
+    order: 1;
+    margin-top: 79px;
+    margin-left: 6.5104%;
     @include font-style(43px, 50px, 700, #000000);
   }
 
-  .feedback__text {
+  .feedback__blockquote {
     order: 3;
     width: 100%;
+    @include conteiner;
     @include font-style(17px, 30px, 400, #444444);
   }
 
-  .feedback__controls {
-    order: 5;
+  .feedback__blockquote-source {
+    float: left;
+    width: 238px;
+    margin-top: 20px;
   }
 
-  .button {
-    order: 2;
-    align-self: center;
+  .feedback__blockquote-controls {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
+@media ($desktop-widths) {
+
+  .feedback {
+    @include conteiner;
+    margin-top: 88px;
+    margin-bottom: 92px;
+
+    .button {
+      margin-right: 0;
+    }
+  }
+
+  .feedback__title {
+    margin-left: 190px;
+  }
+
+  .feedback__blockquote {
+    margin-left: 190px;
+  }
+
+  .feedback__blockquote-text {
+    width: 770px;
   }
 }

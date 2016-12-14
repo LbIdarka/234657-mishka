@@ -11,8 +11,11 @@
   @include font-style(13px, 24px, 400, #444444);
 }
 
-.button {
+.video__description {
+
+  .button {
   width: 90%;
+  }
 }
 
 @media ($tablet-widths) {
