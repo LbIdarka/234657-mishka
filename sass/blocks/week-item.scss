@@ -1,28 +1,48 @@
 .week-item {
   @include conteiner;
   @include font-style(15px, 24px, 400, #444444);
-  outline: $outline;
 }
 
-.week-item__title {
+.week-item__name {
+  margin-top: 35px;
+}
+
+.week-item__name-title {
   @include font-style(25px, 30px, 700, #000000);
   text-align: left;
   margin-bottom: 0;
 }
 
-.week-item__subtitle {
-  margin-top: 0;
+.week-item__name-subtitle {
   @include font-style(17px, 16px, 700, #63d1bb);
   text-transform: uppercase;
   text-align: left;
 }
 
-.week-item__table-list-item {
-  @include font-style(15px, 20px, 400, #444444);
+.week-item__description {
+  margin: 32px 0 29px;
 }
 
-.week-item__foto-price {
-  @include font-style(17px, 24px, 700, #444444);
+.week-item__table-feature {
+  display: table;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.week-item__table-list {
+  display: table-row;
+}
+
+.week-item__table-list-item {
+  display: table-cell;
+  padding: 12px 0;
+  @include font-style(15px, 20px, 400, $text-color);
+  border-bottom: $border;
+}
+
+.week-item__price {
+  margin: 27px 0;
+  @include font-style(17px, 24px, 700, $text-color);
   text-align: center;
 }
 
@@ -30,32 +50,60 @@
 @media ($tablet-widths) {
 
   .week-item {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 70px;
+
+    .button {
+    width: 296px;
+    margin: 0;
+    }
   }
 
-  .week-item__title {
-    outline: 1px solid green;
+  .week-item__name {
+    display: flex;
+    width: 100%;
+    margin: 64px 0 58px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .week-item__name-title {
+    margin: 0;
     @include font-style(43px, 50px, 700, #000000);
   }
 
-  .week-item__subtitle {
-    outline: 1px solid green;
+  .week-item__name-subtitle {
     width: 101px;
+    margin: 0;
+    text-align: center;
   }
 
   .week-item__description {
-    outline: 1px solid green;
-    width: 339px;
+    width: 296px;
+    @include font-style(17px, 30px, 400, $text-color);
+  }
+
+  .week-item__table-feature {
+    margin: 52px 0 38px;
   }
 
   .week-item__foto {
-    outline: 1px solid green;
+    position: absolute;
+    width: 333px;
+    height: 404px;
+    top: 227px;
+    right: 0;
+    outline: $outline;
   }
 
-  .button {
-
+  .week-item__price {
+    width: 296px;
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-size: 20px;
   }
 }
 
@@ -63,12 +111,44 @@
 
   .week-item {
     display: flex;
+    margin-top: 75px;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .button {
+    margin-left: 176px;
+    }
   }
 
-  .week-item__subtitle {
-    order: -1;
+  .week-item__name {
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .week-item__name-title {
+    order: 2;
+    margin-left: 40px;
+    @include font-style(53px, 57px, 700, #000000);
+  }
+
+  .week-item__name-subtitle {
+    width: 130px;
+    order: 1;
+  }
+
+  .week-item__description {
+    margin-left: 176px;
+  }
+
+  .week-item__price {
+    margin-left: 176px;
+  }
+
+  .week-item__foto {
+    width: 527px;
+    height: 636px;
+    z-index: 1;
+    top: 33px;
   }
 
 }

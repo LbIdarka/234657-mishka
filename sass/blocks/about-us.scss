@@ -55,12 +55,13 @@
 
 @media ($desktop-widths) {
 
-  .about-us {
-    width: 648px;
+  .about-us__title {
+    margin-left: 174px;
+    @include font-style(53px, 57px, 700, #000000);
   }
 
-  .about-us__title {
-    @include font-style(53px, 57px, 700, #000000);
+  .about-us__list {
+    margin-left: 174px;
   }
 
   .about-us__list-item:nth-child(-n+3) {

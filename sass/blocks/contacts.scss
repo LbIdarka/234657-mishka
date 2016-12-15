@@ -49,10 +49,12 @@ margin-bottom: 38px;
   .contacts {
     margin-top: 72px;
     margin-bottom: 57px;
+    @include clearfix;
     }
 
   .contacts__data {
     display: flex;
+    @include conteiner;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -81,16 +83,44 @@ margin-bottom: 38px;
 @media ($desktop-widths) {
 
   .contacts {
+    position: relative;
     display: flex;
-    flex-direction: column;
     @include conteiner;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 105px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .contacts__data {
     display: flex;
+    width: 350px;
+    margin: 30px 0 63px 174px;
     flex-wrap: wrap;
     flex-direction: column;
+    border-spacing: 0 15px;
+
+    b {
+      margin-bottom: 30px;
+      @include font-style(53px, 57px, 700, #000000);
+    }
+  }
+
+  .contacts__data-list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacts__map {
+    position: absolute;
+    width: 524px;
+    height: 427px;
+    top: 0;
+    right: 0;
+  }
+
+  .button {
+    margin: 0;
+    margin-left: 174px;
   }
 }
