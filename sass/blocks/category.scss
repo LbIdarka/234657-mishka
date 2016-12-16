@@ -4,6 +4,7 @@
 
 .category__list-item {
   width: 100%;
+  padding: 30px 0 30px 30px;
   background: $color-green;
 }
 
@@ -13,7 +14,6 @@
 
 .category__list-item-info {
   @include font-style(19px, 24px, 700, #ffffff);
-  padding: 30px 180px 30px 30px;
 }
 
 
@@ -28,20 +28,19 @@
 
   .category__list {
     display: flex;
+    min-height: 119px;
+
   }
 
   .category__list-item {
+    display: flex;
     width: 50%;
   }
 
   .category__list-item-info {
-  @include font-style(20px, 30px, 700, #ffffff);
+    align-self: center;
+    @include font-style(20px, 30px, 700, #ffffff);
   }
 }
 
-@media ($desktop-widths) {
 
-  .category__list-item-info{
-    padding-right: 330px;
-  }
-}

@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  padding: 22px 50px;
+  padding: 22px 0;
   text-align: center;
 }
 
@@ -8,14 +8,11 @@
 
   .logo {
     display: flex;
-    width: 367px;
+    width: 323px;
     min-height: 100px;
-    padding-left: 50px;
-    flex-grow: 1;
+    padding: 0;
     justify-content: flex-start;
-    align-self: center;
-    box-sizing: border-box;
-    border-bottom: $border;
+    align-items: center;
     border-right: $border;
   }
 }
@@ -24,7 +21,6 @@
   .logo {
     width: 326px;
     order: 2;
-    flex-grow: 1;
     justify-content: center;
     border-bottom: none;
   }

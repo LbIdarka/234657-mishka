@@ -1,26 +1,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-.page-header {
-}
 
 @media ($tablet-widths){
 
-//  .page-header {
-//    display: flex;
-//    justify-content: space-around;
-//    align-items: center;
-//    width: auto;
-//    outline: $outline;
-//  }
-
-
-
+  @include conteiner;
 }
 
-@media ($desktop-widths) {
-//  .page-header {
-//    display: flex;
-//    width: auto;
-//  }
-}
