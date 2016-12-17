@@ -11,6 +11,10 @@
   @include font-style(17px, 24px, 700, #000000);
 }
 
+.about-us__item-text {
+  margin: 0;
+}
+
 @media ($tablet-widths) {
 
   .about-us {
