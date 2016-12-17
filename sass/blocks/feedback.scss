@@ -23,7 +23,7 @@ feedback__blockquote-source {
   font-style: normal;
 }
 
-.feedback__blockquote-controls {
+.feedback__controls {
   display: flex;
   width: 258px;
   min-height: 50px;
@@ -43,6 +43,7 @@ feedback__blockquote-source {
 @media ($tablet-widths) {
 
   .feedback {
+    position: relative;
     display: flex;
     width: 100%;
     margin-top: 80px;
@@ -52,7 +53,7 @@ feedback__blockquote-source {
     background: url("/img/review@1x.jpg") no-repeat 0 0;
 
     .button {
-    flex-basis: 174px;
+    width: 174px;
     order: 2;
     margin-top: 79px;
     margin-right: 6.5104%;
@@ -75,14 +76,15 @@ feedback__blockquote-source {
   }
 
   .feedback__blockquote-source {
-    float: left;
     width: 238px;
     margin-top: 20px;
   }
 
-  .feedback__blockquote-controls {
-    float: right;
+  .feedback__controls {
+    position: absolute;
     margin-top: 20px;
+    bottom: 20px;
+    right: 50px;
   }
 }
 

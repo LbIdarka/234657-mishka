@@ -83,11 +83,9 @@ margin-bottom: 38px;
 @media ($desktop-widths) {
 
   .contacts {
-    position: relative;
     display: flex;
     @include conteiner;
     margin-bottom: 105px;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -95,7 +93,8 @@ margin-bottom: 38px;
   .contacts__data {
     display: flex;
     width: 350px;
-    margin: 30px 0 63px 174px;
+    margin-left: 176px;
+    align-self: center;
     flex-wrap: wrap;
     flex-direction: column;
     border-spacing: 0 15px;
@@ -112,15 +111,14 @@ margin-bottom: 38px;
   }
 
   .contacts__map {
-    position: absolute;
     width: 524px;
-    height: 427px;
-    top: 0;
-    right: 0;
+    height: 457px;
   }
 
   .button {
-    margin: 0;
+    width: 230px;
     margin-left: 174px;
+    margin-top: -60px;
   }
+
 }

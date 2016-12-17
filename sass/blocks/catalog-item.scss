@@ -1,5 +1,5 @@
 .catalog-item {
-  margin-bottom: 30px;
+  min-height: 374px;
 }
 
 .catalog-item__foto img {
@@ -47,12 +47,11 @@
 
   .catalog-item {
     display: flex;
-    margin-bottom: 54px;
+    min-height: 334px;
   }
 
   .catalog-item__foto {
     width: 333px;
-    height: 334px;
     outline: 1px solid red;
   }
 
@@ -75,27 +74,27 @@
 
 @media ($desktop-widths) {
 
-  .catalog {
-    margin: 132px auto 52px;
-  }
-
   .catalog-item {
-    margin-right: 52px;
-    margin-bottom: 0;
+    width: 316px;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
   .catalog-item__foto {
-    width: 315px;
+    width: 316px;
     height: 462px;
   }
 
   .catalog-item__info {
-    width: 315px;
+    width: 316px;
+    min-height: 213px;
   }
 
   .catalog-item__info-description {
-    margin-top: 0;
+    margin: 0;
+  }
+
+  .catalog-item__info-text {
+    margin-bottom: 17px;
   }
 }

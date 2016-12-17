@@ -33,6 +33,11 @@ input[type="text"] {
   .filter {
     display: flex;
     flex-wrap: wrap;
+
+    .button {
+    width: 50%;
+    order: 6;
+    }
   }
 
   .filter__wrapper {
@@ -90,10 +95,7 @@ input[type="text"] {
     order: 7;
   }
 
-  .button {
-    flex-basis: 50%;
-    order: 6;
-  }
+
 }
 
 @media ($desktop-widths) {

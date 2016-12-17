@@ -56,14 +56,13 @@
 @media ($desktop-widths) {
 
   .about-us__title {
-    margin-left: 204px;
+    margin-left: 176px;
     @include font-style(53px, 57px, 700, #000000);
   }
 
   .about-us__list {
     width: 642px;
-    margin: 0 auto;
-//    margin-left: 174px;
+    margin-left: 176px;
   }
 
 }
