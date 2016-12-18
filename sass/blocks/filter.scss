@@ -18,13 +18,22 @@ input[type="radio"] {
   width: 217px;
   flex-wrap: wrap;
   align-content: space-between;
-
-  &--color {
-    min-height: 344px;
-  }
 }
 
+.filter__wrapper-color-list {
+  display: flex;
+  width: 217px;
+  min-height: 344px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  }
+
 .filter__wrapper-title {
+  @include font-style(17px, 16px, 700, $color-green);
+  text-transform: uppercase;
+}
+
+.filter__wrapper-color-title {
   @include font-style(17px, 16px, 700, $color-green);
   text-transform: uppercase;
 }
@@ -77,7 +86,7 @@ label {
   @include font-style(17px, 18px, 700, #000000);
 }
 
-.filter__tip {
+.filter__wrapper-tip-text {
   @include font-style(14px, 16px, 400, #444444);
 }
 
@@ -92,15 +101,11 @@ label {
 
   .filter {
     display: flex;
+    width: 100%;
+    margin: 0;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    .button {
-    width: 228px;
-    margin: 0;
-    order: 6;
-    }
+    justify-content: space-around;
   }
 
   .filter__wrapper {
@@ -108,10 +113,13 @@ label {
     flex-flow: row nowrap;
     width: 100%;
     justify-content: flex-start;
-
   }
 
-  .filter__wrapper--color {
+  .filter__wrapper--container {
+    @include container;
+  }
+
+  .filter__wrapper--bg {
     min-height: 304px;
     width: 100%;
     align-items: center;
@@ -121,27 +129,35 @@ label {
   .filter__wrapper-title {
     width: 168px;
     margin: 0;
-
-    &--color {
-      min-height: 204px;
-    }
   }
+
+  .filter__wrapper-color {
+    display: flex;
+  }
+
+  .filter__wrapper-color-title {
+    min-height: 204px;
+    width: 168px;
+    margin: 0;
+    }
 
   .filter__wrapper-list{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     min-height: 129px;
+  }
 
-    &--color {
-      width: 463px;
-      min-height: 208px;
-      flex-direction: row;
-      align-content: space-between;
+  .filter__wrapper-color-list {
+    display: flex;
+    width: 463px;
+    min-height: 208px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
 
-      .filter__wrapper-item {
-        width: 25%;
-      }
+    .filter__wrapper-item {
+      width: 25%;
     }
   }
 
@@ -179,6 +195,12 @@ label {
     background-color: $bg-title-footer;
   }
 
+  .filter__wrapper-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
   .filter__wrapper-contacts {
     display: flex;
     width: 100%;
@@ -192,11 +214,18 @@ label {
     width: 100%;
   }
 
-  .filter__tip {
-    width: 50%;
-    order: 7;
-    align-self: center;
-    text-align: right;
+  .filter__wrapper-tip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .button {
+      width: 228px;
+      margin: 0;
+    }
+  }
+
+  .filter__wrapper-tip-text{
     font-size: 17px;
     line-height: 30px;
   }
@@ -207,22 +236,32 @@ label {
 @media ($desktop-widths) {
 
   .filter {
-    width: 815px;
-    margin: 0 auto;
     margin-bottom: 50px;
   }
 
-  .filter__wrapper--color {
+  .filter__wrapper--container {
+    width: 815px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper--bg {
     min-height: 228px;
     align-items: baseline;
   }
 
-  .filter__wrapper-list--color {
+  .filter__wrapper-color-list {
     width: 100%;
     align-content: space-around;
 
     .filter__wrapper-item {
       width: 20%;
+    }
+  }
+
+  .filter__wrapper-tip {
+
+    .button {
+      margin-left: 136px;
     }
   }
 }
