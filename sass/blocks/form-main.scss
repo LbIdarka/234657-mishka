@@ -17,6 +17,7 @@ h1 {
 }
 
 
+
 @media ($tablet-widths) {
 
   .form-main__title {
@@ -28,15 +29,18 @@ h1 {
   }
 
   h1 {
-    @include font-style(43px, 50px, 700, #000000);
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .form-main__description {
-    @include font-style(17px, 30px, 400, #444444);
     margin-top: 82px;
     margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
+
 
 
 @media ($desktop-widths) {
@@ -47,5 +51,4 @@ h1 {
   .form-main__description {
     width: 672px;
   }
-
 }

@@ -1,6 +1,6 @@
 .contacts {
-margin-top: 40px;
-margin-bottom: 38px;
+  margin-top: 40px;
+  margin-bottom: 38px;
 }
 
 .contacts__data {
@@ -44,6 +44,8 @@ margin-bottom: 38px;
   margin-top: 39px;
 }
 
+
+
 @media ($tablet-widths) {
 
   .contacts {
@@ -60,7 +62,8 @@ margin-bottom: 38px;
 
     b {
       width: 100%;
-      @include font-style(43px, 50px, 700, #000000);
+      font-size: 43px;
+      line-height: 50px;
     }
   }
 
@@ -70,7 +73,7 @@ margin-bottom: 38px;
   }
 
   .contacts__data-list-item {
-  @include font-style(17px, 30px, 400, $text-color);
+    font-size: 15px;
   }
 
   .button {
@@ -79,6 +82,8 @@ margin-bottom: 38px;
     text-align: center;
   }
 }
+
+
 
 @media ($desktop-widths) {
 
@@ -101,7 +106,8 @@ margin-bottom: 38px;
 
     b {
       margin-bottom: 30px;
-      @include font-style(53px, 57px, 700, #000000);
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 
@@ -120,5 +126,4 @@ margin-bottom: 38px;
     margin-left: 174px;
     margin-top: -60px;
   }
-
 }

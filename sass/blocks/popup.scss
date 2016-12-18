@@ -48,6 +48,8 @@
   border: 2px solid #ececec;
 }
 
+
+
 @media ($tablet-widths) {
 
   .popup {
@@ -60,7 +62,8 @@
   }
 
   .popup__title {
-    @include font-style(30px, 57px, 700, #000000);
+    font-size: 30px;
+    line-height: 57px;
   }
 
   .popup__subtitle {

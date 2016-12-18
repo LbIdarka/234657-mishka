@@ -16,6 +16,7 @@
 }
 
 
+
 @media ($tablet-widths) {
 
   .category {
@@ -28,7 +29,6 @@
   .category__list {
     display: flex;
     min-height: 119px;
-
   }
 
   .category__list-item {
@@ -38,7 +38,8 @@
 
   .category__list-item-info {
     align-self: center;
-    @include font-style(20px, 30px, 700, #ffffff);
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

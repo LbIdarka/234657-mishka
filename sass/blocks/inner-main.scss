@@ -9,6 +9,8 @@
   }
 }
 
+
+
 @media ($tablet-widths) {
 
   .inner-main__title {
@@ -18,15 +20,17 @@
     height: 226px;
     margin-top: -70px;
     z-index: 1;
-
   }
 
   h1 {
     margin: auto;
-    @include font-style(43px, 50px, 700, #000000);
+    font-size: 43px;
+    line-height: 50px;
     text-align: center;
   }
 }
+
+
 
 @media ($desktop-widths) {
 
@@ -38,7 +42,8 @@
   }
 
   h1 {
-    @include font-style(53px, 57px, 700, #000000);
+    font-size: 53px;
+    line-height: 57px;
     text-align: center;
   }
 }

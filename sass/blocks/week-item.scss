@@ -47,6 +47,7 @@
 }
 
 
+
 @media ($tablet-widths) {
 
   .week-item {
@@ -72,7 +73,8 @@
 
   .week-item__name-title {
     margin: 0;
-    @include font-style(43px, 50px, 700, #000000);
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .week-item__name-subtitle {
@@ -117,6 +119,8 @@
   }
 }
 
+
+
 @media ($desktop-widths) {
 
   .week-item {
@@ -139,7 +143,8 @@
   .week-item__name-title {
     order: 2;
     margin-left: 40px;
-    @include font-style(53px, 57px, 700, #000000);
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .week-item__name-subtitle {
@@ -158,5 +163,4 @@
     z-index: 1;
     top: 33px;
   }
-
 }

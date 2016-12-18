@@ -4,7 +4,7 @@
   margin-bottom: 38px;
 
   .button {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -40,6 +40,8 @@ feedback__blockquote-source {
   }
 }
 
+
+
 @media ($tablet-widths) {
 
   .feedback {
@@ -65,14 +67,15 @@ feedback__blockquote-source {
     order: 1;
     margin-top: 79px;
     margin-left: 6.5104%;
-    @include font-style(43px, 50px, 700, #000000);
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .feedback__blockquote {
     order: 3;
     width: 100%;
     @include conteiner;
-    @include font-style(17px, 30px, 400, #444444);
+    font-size: 17px;
   }
 
   .feedback__blockquote-source {
@@ -87,6 +90,8 @@ feedback__blockquote-source {
     right: 50px;
   }
 }
+
+
 
 @media ($desktop-widths) {
 

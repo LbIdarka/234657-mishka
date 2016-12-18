@@ -43,6 +43,8 @@
   display: none;
 }
 
+
+
 @media ($tablet-widths){
 
   .menu {
@@ -63,7 +65,7 @@
   .menu__list-item {
     padding: 23px 0;
     flex-grow: 1;
-    @include font-style(15px, 24px, 700, #000000);
+    font-size: 15px;
     text-align: left;
     border: none;
 
@@ -79,7 +81,6 @@
 
   .menu__list-users-item {
     padding: 0;
-    @include font-style(17px, 24px, 700, #000000);
     text-align: right;
     box-sizing: border-box;
 
@@ -140,7 +141,6 @@
 
   .menu__list-item {
     padding: 35px 0;
-    @include font-style(17px, 24px, 700, #000000);
     text-align: left;
 
 
@@ -186,7 +186,7 @@
     display: block;
     padding: 0;
     padding-top: 24px;
-    @include font-style(15px, 24px, 700, #000000);
+    font-weight: 700;
     box-sizing: border-box;
 
     &:first-child {
