@@ -16,72 +16,6 @@ h1 {
   margin-top: 27px;
 }
 
-.filter {
-  display: flex;
-  min-height: 1433px;
-  margin-bottom: 55px;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
-
-.filter__wrapper-list {
-  display: flex;
-  min-height: 100px;
-  width: 217px;
-  flex-wrap: wrap;
-  align-content: space-between;
-
-  &--color {
-    min-height: 344px;
-  }
-}
-
-.filter__wrapper-item {
-  margin-left: 65px;
-}
-
-.filter__wrapper-inner-item {
-  display: flex;
-  min-height: 93px;
-  flex-wrap: wrap;
-  align-content: space-around;
-}
-
-input {
-  width: 100%;
-  padding-bottom: 20px;
-  border: none;
-  border-bottom: 2px solid #000000;
-}
-
-.filter__wrapper--contacts {
-  width: 100%;
-}
-
-.filter__label--hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-textarea {
-  width: 260px;
-  min-height: 140px;
-  padding-top: 20px;
-  padding-left: 14px;
-  box-sizing: border-box;
-  border: 2px solid #000000;
-}
 
 @media ($tablet-widths) {
 
@@ -102,38 +36,8 @@ textarea {
     margin-top: 82px;
     margin-bottom: 60px;
   }
-
-  .filter__wrapper--color {
-    min-height: 304px;
-    width: 134px;
-    align-items: center;
-  }
-
-  .filter__wrapper-title {
-    width: 168px;
-    margin: 0;
-  }
-
-  .filter__wrapper-list {
-    width: 100%;
-    min-height: 129px;
-
-    &--color {
-      width: 463px;
-      min-height: 208px;
-      flex-direction: row;
-      align-content: space-around;
-
-      .filter__wrapper-item {
-        width: 25%;
-      }
-    }
-  }
-
-  .filter__wrapper-inner {
-    width: 100%;
-  }
 }
+
 
 @media ($desktop-widths) {
   .form-main__title {
