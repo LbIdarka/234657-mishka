@@ -8,7 +8,7 @@
 
 h1 {
   margin: auto;
-  @include conteiner;
+  @include container;
   @include font-style(27px, 30px, 700, #000000);
   text-align: center;
 }

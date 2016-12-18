@@ -22,7 +22,7 @@
   .category {
     position: relative;
     z-index: 3;
-    @include conteiner;
+    @include container;
     margin-top: -118px;
   }
 
@@ -42,5 +42,3 @@
     line-height: 30px;
   }
 }
-
-

@@ -1,5 +1,5 @@
 .feedback {
-  @include conteiner;
+  @include container;
   margin-top: 65px;
   margin-bottom: 38px;
 
@@ -74,7 +74,7 @@ feedback__blockquote-source {
   .feedback__blockquote {
     order: 3;
     width: 100%;
-    @include conteiner;
+    @include container;
     font-size: 17px;
   }
 
@@ -96,7 +96,7 @@ feedback__blockquote-source {
 @media ($desktop-widths) {
 
   .feedback {
-    @include conteiner;
+    @include container;
     margin-top: 88px;
     margin-bottom: 92px;
 

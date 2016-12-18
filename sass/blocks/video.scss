@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   min-height: 504px;
-  @include conteiner;
+  @include container;
   margin-bottom: 57px;
   flex-wrap: wrap;
   align-content: flex-end;
@@ -86,7 +86,7 @@
 
   .video {
     min-height: 457px;
-    @include conteiner;
+    @include container;
     margin-bottom: 105px;
     flex-direction: row;
     flex-wrap: nowrap;

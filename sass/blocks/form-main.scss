@@ -10,7 +10,7 @@ h1 {
 }
 
 .form-main__description {
-  @include conteiner;
+  @include container;
   @include font-style(13px, 24px, 400, #444444);
   margin-bottom: 27px;
   margin-top: 27px;

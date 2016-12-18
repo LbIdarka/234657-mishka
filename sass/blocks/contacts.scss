@@ -6,7 +6,7 @@
 .contacts__data {
   display: table;
   width: 100%;
-  @include conteiner;
+  @include container;
   border-spacing: 0 25px;
 
   b {
@@ -40,7 +40,7 @@
 }
 
 .button {
-  @include conteiner;
+  @include container;
   margin-top: 39px;
 }
 
@@ -56,7 +56,7 @@
 
   .contacts__data {
     display: flex;
-    @include conteiner;
+    @include container;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -89,7 +89,7 @@
 
   .contacts {
     display: flex;
-    @include conteiner;
+    @include container;
     margin-bottom: 105px;
     flex-wrap: wrap;
     justify-content: flex-start;
