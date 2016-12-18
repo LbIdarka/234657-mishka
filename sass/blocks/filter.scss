@@ -145,6 +145,7 @@ label {
 
   .filter__wrapper-item {
     width: 50%;
+    font-size: 19px;
   }
 
   label {
@@ -198,6 +199,8 @@ label {
     order: 7;
     align-self: center;
     text-align: right;
+    font-size: 17px;
+    line-height: 30px;
   }
 
 
@@ -207,8 +210,27 @@ label {
 
 @media ($desktop-widths) {
 
-  .filter__wrapper:nth-of-type(2) .filter__wrapper-item {
-    flex-basis: 26%;
+  .filter {
+    width: 815px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
+//  .filter__wrapper-title {
+//    margin-right: 110px;
+//  }
+
+  .filter__wrapper--color {
+    min-height: 228px;
+    align-items: baseline;
+  }
+
+  .filter__wrapper-list--color {
+    width: 100%;
+    align-content: space-around;
+
+    .filter__wrapper-item {
+      width: 20%;
+    }
+  }
 }
