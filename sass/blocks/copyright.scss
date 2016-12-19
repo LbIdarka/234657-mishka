@@ -1,26 +1,30 @@
 .copyright {
-  @include conteiner;
+  display: flex;
+  @include container;
   padding-top: 28px;
   padding-bottom: 24px;
+  justify-content: center;
+  align-items: center;
   @include font-style(19px, 18px, 700, #000000);
-  text-align: center;
-
-  &__logo {
-    padding-left: 30px;
-
-    img {
-    vertical-align: middle;
-    }
   }
+
+.copyright__logo {
+  padding-left: 30px;
 }
+
+
 
 @media ($tablet-widths) {
 
   .copyright {
     width: 220px;
     padding: 51px 0 51px;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 }
+
+
 
 @media ($desktop-widths) {
 

@@ -1,9 +1,41 @@
 .video {
-  @include conteiner;
+  position: relative;
+  display: flex;
+  min-height: 504px;
+  @include container;
+  margin-bottom: 57px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
   border: $border;
 }
 
+.video__description {
+  display: flex;
+  width: 191px;
+  min-height: 257px;
+  flex-wrap: wrap;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+  width: 192px;
+  margin: 0;
+  align-self: flex-start;
+  }
+}
+
 .video__description-title {
+  position: absolute;
+  margin-left: 91px;
+  top: 0;
+  left: 0;
   @include font-style(17px, 24px, 700, #000000);
 }
 
@@ -11,35 +43,83 @@
   @include font-style(13px, 24px, 400, #444444);
 }
 
-.button {
-  width: 90%;
-}
+
 
 @media ($tablet-widths) {
 
   .video {
     display: flex;
+    min-height: 743px;
     flex-wrap: wrap;
-    flex-direction: column;
+    border: none;
 
     img {
       width: 100%;
+      height: 456px;
+    }
+  }
+
+  .video__description {
+    width: 687px;
+    align-content: space-around;
+    justify-content: center;
+    border: $border;
+
+    .button {
+    width: 585px;
+    margin: 0;
+    margin-bottom: 30px;
     }
   }
 
   .video__description-title {
-  @include font-style(20px, 24px, 700, #000000);
+    position: relative;
+    width: 585px;
+    margin-left: 68px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: left;
   }
 
   .video__description-info {
-  @include font-style(15px, 30px, 400, #444444);
+    width: 585px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
+
+
 
 @media ($desktop-widths) {
 
   .video {
-    flex-direction: row-reverse;
+    min-height: 457px;
+    @include container;
+    margin-bottom: 105px;
+    flex-direction: row;
     flex-wrap: nowrap;
+
+    img {
+      width: 668px;
+    }
+  }
+
+  .video__description {
+    width: 368px;
+    height: 456px;
+    align-content:  space-around;
+
+    .button {
+    width: 231px;
+    }
+  }
+
+  .video__description-title {
+    width: 231px;
+    margin-left: 0;
+  }
+
+  .video__description-info {
+    width: 231px;
   }
 }

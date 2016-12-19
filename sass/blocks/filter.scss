@@ -1,25 +1,104 @@
 .filter {
-  @include conteiner;
+  display: flex;
+  min-height: 1433px;
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  @include container;
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+.filter__wrapper-list {
+  display: flex;
+  min-height: 100px;
+  width: 217px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.filter__wrapper-color-list {
+  display: flex;
+  width: 217px;
+  min-height: 344px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  }
 
 .filter__wrapper-title {
   @include font-style(17px, 16px, 700, $color-green);
   text-transform: uppercase;
 }
 
+.filter__wrapper-color-title {
+  @include font-style(17px, 16px, 700, $color-green);
+  text-transform: uppercase;
+}
+
 .filter__wrapper-item {
+  margin-left: 65px;
   @include font-style(17px, 18px, 700, #000000);
+}
+
+.filter__wrapper-inner-item {
+  display: flex;
+  min-height: 93px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+input {
+  width: 100%;
+  padding-bottom: 20px;
+  @include font-style(17px, 18px, 400, #444444);
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+.filter__wrapper--contacts {
+  width: 100%;
+}
+
+.filter__label--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+textarea {
+  width: 260px;
+  min-height: 140px;
+  padding-top: 20px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  outline: none;
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 label {
   @include font-style(17px, 18px, 700, #000000);
 }
 
-input[type="text"] {
-  @include font-style(17px, 18px, 400, #444444);
-}
-
-.filter__tip {
+.filter__wrapper-tip-text {
   @include font-style(14px, 16px, 400, #444444);
 }
 
@@ -28,78 +107,173 @@ input[type="text"] {
   background-color: #ffffff;
 }
 
+
+
 @media ($tablet-widths) {
 
   .filter {
     display: flex;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .filter__wrapper {
     display: flex;
     flex-flow: row nowrap;
-    flex-basis: 100%;
+    width: 100%;
     justify-content: flex-start;
-    margin-bottom: 50px;
+  }
 
-    &:nth-of-type(2) {
-      background-color: $bg-title-footer;
-    }
+  .filter__wrapper--container {
+    @include container;
+  }
 
-    &:nth-of-type(n+4):nth-of-type(-n+5) {
-      background-color: $bg-title-footer;
-    }
+  .filter__wrapper--bg {
+    min-height: 304px;
+    width: 100%;
+    align-items: center;
+    background-color: $bg-title-footer;
   }
 
   .filter__wrapper-title {
     width: 168px;
+    margin: 0;
   }
+
+  .filter__wrapper-color {
+    display: flex;
+  }
+
+  .filter__wrapper-color-title {
+    min-height: 204px;
+    width: 168px;
+    margin: 0;
+    }
 
   .filter__wrapper-list{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    min-height: 129px;
+  }
+
+  .filter__wrapper-color-list {
+    display: flex;
+    width: 463px;
+    min-height: 208px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+
+    .filter__wrapper-item {
+      width: 25%;
+    }
   }
 
   .filter__wrapper-item {
-    flex-basis: 50%;
+    width: 50%;
+    font-size: 19px;
   }
 
   label {
-  @include font-style(19px, 18px, 700, #000000);
+  margin-right: 27px;
+  font-size: 19px;
 }
 
-  input[type="text"] {
-    @include font-style(19px, 18px, 400, #444444);
-  }
-
-  .filter__wrapper:nth-of-type(1) .filter__wrapper-item {
-    flex-direction: column;
+  input {
+    font-size: 19px;
   }
 
   .filter__wrapper-inner {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .filter__wrapper-inner-item {
-    flex-basis: 100%;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 
-  .filter__tip {
-    flex-basis: 50%;
-    order: 7;
+  .filter__wrapper--contacts {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 229px;
+    align-content: space-around;
+    background-color: $bg-title-footer;
   }
 
-  .button {
-    flex-basis: 50%;
-    order: 6;
+  .filter__wrapper-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .filter__wrapper-contacts {
+    display: flex;
+    width: 100%;
+
+    input {
+      background-color: $bg-title-footer;
+    }
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .filter__wrapper-tip {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .button {
+      width: 228px;
+      margin: 0;
+    }
+  }
+
+  .filter__wrapper-tip-text{
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
+
+
 @media ($desktop-widths) {
 
-  .filter__wrapper:nth-of-type(2) .filter__wrapper-item {
-    flex-basis: 26%;
+  .filter {
+    margin-bottom: 50px;
   }
 
+  .filter__wrapper--container {
+    width: 815px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper--bg {
+    min-height: 228px;
+    align-items: baseline;
+  }
+
+  .filter__wrapper-color-list {
+    width: 100%;
+    align-content: space-around;
+
+    .filter__wrapper-item {
+      width: 20%;
+    }
+  }
+
+  .filter__wrapper-tip {
+
+    .button {
+      margin-left: 136px;
+    }
+  }
 }

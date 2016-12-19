@@ -3,17 +3,14 @@
 .menu {
   display: block;
   margin: 0 auto;
-//  @include conteiner;
 }
 
 .menu__list-item {
 
-  padding-top: 31px;
-  padding-bottom: 31px;
-  padding-left: 76px;
+  padding: 31px 0;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
-  text-align: left;
+  text-align: center;
 
   &:first-child {
     border-top: $border;
@@ -21,12 +18,10 @@
 }
 
 .menu__list-users-item {
-  padding-top: 37px;
-  padding-bottom: 37px;
-  padding-left: 76px;
+  padding: 37px 0;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
-  text-align: left;
+  text-align: center;
 
     &:first-child {
     border-top: none;
@@ -37,37 +32,51 @@
   }
 }
 
+.menu__list-users-item-hidden {
+  margin: 0;
+}
+
 .menu__list-new {
-  padding-top: 37px;
-  padding-bottom: 37px;
-  padding-left: 76px;
+  padding: 37px 0;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
   display: none;
 }
 
+.menu__link {
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
+
+
 @media ($tablet-widths){
 
   .menu {
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
-    z-index: 2;
+    display: flex;
+    @include container;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    z-index: 2;
   }
 
   .menu__list {
     display: flex;
     width: 367px;
-    padding-left: 50px;
     order: 3;
-    box-sizing: border-box;
   }
 
   .menu__list-item {
     padding: 23px 0;
     flex-grow: 1;
-    @include font-style(15px, 24px, 700, #000000);
+    font-size: 15px;
     text-align: left;
     border: none;
 
@@ -79,26 +88,22 @@
   .menu__list-users {
     display: flex;
     order: 2;
-    border-bottom: $border;
-    box-sizing: border-box;
   }
 
   .menu__list-users-item {
-    padding-bottom: 39px;
-    padding-left: 0;
-    @include font-style(17px, 24px, 700, #000000);
+    padding: 0;
     text-align: right;
     box-sizing: border-box;
 
     &:first-child {
       width: 84px;
+      border-right: $border;
       border-bottom: none;
     }
 
      &:nth-child(2) {
-      width: 316px;
-      padding-right: 50px;
-      border-left: $border;
+      width: 260px;
+      align-self: center;
     }
   }
 
@@ -109,15 +114,14 @@
   .menu__list-new {
     display: flex;
     order: 4;
-    width: 399px;
+    width: 301px;
     padding: 0;
     justify-content: flex-end;
     border: none;
-    box-sizing: border-box;
   }
 
   .menu__list-new-item {
-    padding: 23px 50px 0;
+    padding: 23px 0;
     @include font-style(15px, 24px, 400, $text-color);
   }
 
@@ -130,6 +134,8 @@
   }
 }
 
+
+
 @media ($desktop-widths) {
 
   .menu {
@@ -139,24 +145,23 @@
 
   .menu__list {
     display: flex;
+    width: 375px;
     order: 1;
-    width: 425px;
     margin: 0;
-    flex-grow: 1;
   }
 
   .menu__list-item {
     padding: 35px 0;
-    @include font-style(17px, 24px, 700, #000000);
+    text-align: left;
+    font-size: 17px;
 
 
     &:first-child {
       width: 185px;
-      text-align: left;
       border-right: $border;
     }
 
-    .menu__list-item:last-child {
+    &:last-child {
       width: 160px;
       text-align: right;
     }
@@ -164,9 +169,9 @@
 
   .menu__list-users {
     display: flex;
+    width: 348px;
     order: 3;
-    width: 350px;
-    flex-grow: 1;
+    justify-content: flex-end;
     border-bottom: none;
   }
 
@@ -178,28 +183,35 @@
     }
 
     &:last-child {
-      width: 266px;
+      width: 265px;
     }
   }
 
   .menu__list-new {
     display: flex;
-    order: 4;
     width: 100%;
+    order: 4;
     padding: 0;
-    border-top: $border;
   }
 
   .menu__list-new-item {
     display: block;
-    width: 175px;
+    padding: 0;
     padding-top: 24px;
-    @include clearfix;
-    @include font-style(15px, 24px, 700, #000000);
+    font-weight: 700;
+    box-sizing: border-box;
+
+    &:first-child {
+      width: 259px;
+
+    }
+
+    &:nth-child(2) {
+      width: 192px;
+    }
 
     &:last-child {
-      flex-grow: 1;
-      width: 266px;
+      width: 725px;
       font-weight: 400;
       color: $text-color;
       text-align: right;

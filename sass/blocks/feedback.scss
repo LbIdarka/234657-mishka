@@ -1,50 +1,119 @@
 .feedback {
-  @include conteiner;
-  outline: $outline;
+  @include container;
+  margin-top: 65px;
+  margin-bottom: 38px;
+
+  .button {
+    width: 100%;
+  }
 }
 
 .feedback__title {
   @include font-style(25px, 30px, 700, #000000);
 }
 
-.feedback__text {
+.feedback__blockquote {
   margin: 0;
   @include font-style(15px, 30px, 400, #444444);
+  margin-bottom: 35px;
 }
 
-.feedback__source {
+feedback__blockquote-source {
   @include font-style(18px, 24px, 400, #000000);
   font-style: normal;
+}
 
-  b {
-    font-weight: normal;
+.feedback__controls {
+  display: flex;
+  width: 258px;
+  min-height: 50px;
+
+  &--prev {
+    width: 129px;
+    border: $border;
+  }
+
+  &--next {
+    width: 129px;
+    border: $border;
+    border-left: none;
   }
 }
+
+
 
 @media ($tablet-widths) {
 
   .feedback {
+    position: relative;
     display: flex;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 86px;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: url("/img/review@1x.jpg") no-repeat 0 0;
+
+    .button {
+    width: 174px;
+    order: 2;
+    margin-top: 79px;
+    margin-right: 6.5104%;
+    align-self: flex-start;
+    }
   }
 
   .feedback__title {
-    @include font-style(43px, 50px, 700, #000000);
+    order: 1;
+    margin-top: 79px;
+    margin-left: 6.5104%;
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  .feedback__text {
+  .feedback__blockquote {
     order: 3;
     width: 100%;
-    @include font-style(17px, 30px, 400, #444444);
+    @include container;
+    font-size: 17px;
+  }
+
+  .feedback__blockquote-source {
+    width: 238px;
+    margin-top: 20px;
   }
 
   .feedback__controls {
-    order: 5;
+    position: absolute;
+    margin-top: 20px;
+    bottom: 20px;
+    right: 50px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+
+  .feedback {
+    @include container;
+    margin-top: 88px;
+    margin-bottom: 92px;
+
+    .button {
+      margin-right: 0;
+    }
   }
 
-  .button {
-    order: 2;
-    align-self: center;
+  .feedback__title {
+    margin-left: 190px;
+  }
+
+  .feedback__blockquote {
+    margin-left: 190px;
+  }
+
+  .feedback__blockquote-text {
+    width: 770px;
   }
 }

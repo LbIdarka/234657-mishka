@@ -1,24 +1,27 @@
 @import 'variables.scss';
 
 .page-footer {
-  height: 160px;
+  min-height: 160px;
   background-color: $bg-title-footer;
-  outline: $outline;
 }
 
-.conteiner {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  align-items: center;
   }
 
 .page-footer__logo {
   display: none;
 }
 
+
+
+
 @media ($tablet-widths) {
 
-  .conteiner {
+  .container {
     display: flex;
     justify-content: space-between;
   }
@@ -27,8 +30,12 @@
     display: block;
     width: 220px;
     padding: 51px 0 51px;
+    flex-grow: 1;
   }
 }
+
+
+
 
 @media ($desktop-widths) {
 

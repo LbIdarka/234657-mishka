@@ -1,40 +1,120 @@
 .catalog-item {
-  margin-bottom: 30px;
+  min-height: 374px;
+}
+
+.catalog-item__foto img {
+  display: block;
+}
+
+.catalog-item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px 28px 30px;
+  box-sizing: border-box;
+  border: $border;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-item__info-title {
+  margin-bottom: 11px;
   @include font-style(17px, 24px, 700, #000000);
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 .catalog-item__info-description {
-  @include font-style(13px, 30px, 400, #444444);
+  margin-bottom: 20px;
+  @include font-style(13px, 30px, 400, $text-color);
 }
 
-.catalog-item__info-price {
+.catalog-item__info-order {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   @include font-style(15px, 24px, 700, #000000);
+  border-top: $border;
 }
+
+.catalog-item__info-order-price {
+  margin: 0;
+  padding-top: 25px;
+}
+
+.catalog-item__info-order-price-cart {
+  font-size: 0;
+}
+
+
 
 @media ($tablet-widths) {
 
   .catalog-item {
     display: flex;
-    border: $border;
+    min-height: 334px;
+  }
+
+  .catalog-item__foto {
+    width: 333px;
+    outline: 1px solid red;
   }
 
   .catalog-item__info {
+    width: 50%;
+  }
 
+  .catalog-item__info-title {
+    font-size: 20px;
+  }
+
+  .catalog-item__info-description {
+    font-size: 15px;
+  }
+
+  .catalog-item__info-order {
+    font-size: 17px;
   }
 }
+
+
 
 @media ($desktop-widths) {
 
   .catalog-item {
+    width: 316px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: none;
+    flex-direction: column;
+  }
+
+  .catalog-item__foto {
+    width: 316px;
+    height: 462px;
   }
 
   .catalog-item__info {
-    border: $border;
+    width: 316px;
+    min-height: 213px;
+  }
+
+  .catalog-item__info-description {
+    margin: 0;
+  }
+
+  .catalog-item__info-text {
+    margin-bottom: 17px;
   }
 }

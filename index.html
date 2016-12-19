@@ -16,82 +16,82 @@
       </div>
       <ul class="menu__list">
         <li class="menu__list-item">
-          <a href="catalog.html">Каталог товаров</a>
+          <a href="catalog.html" class="menu__link  menu__list-item-link">Каталог товаров</a>
         </li>
         <li class="menu__list-item">
-          <a href="form.html">Вязание на заказ</a>
+          <a href="form.html" class="menu__link  menu__list-item-link">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="menu__list-users">
         <li class="menu__list-users-item  menu__list-users-item--search">
-          <a href="#">
+          <a href="#" class="menu__link  menu__list-users-item-link">
             <p class="menu__list-users-item-hidden">Поиск по сайту</p>
           </a>
         </li>
         <li class="menu__list-users-item  menu__list-users-item--cart">
-          <a href="#">Корзина: пока пуста</a>
+          <a href="#" class="menu__link  menu__list-users-item-link">Корзина: пока пуста</a>
         </li>
       </ul>
       <ul class="menu__list-new">
         <li class="menu__list-new-item">
-          <a href="#">Новые поступления</a>
+          <a href="#" class="menu__link  menu__list-new-item-link">Новые поступления</a>
         </li>
         <li class="menu__list-new-item">
-          <a href="#">Распродажа</a>
+          <a href="#" class="menu__link  menu__list-new-item-link">Распродажа</a>
         </li>
         <li class="menu__list-new-item">
-          <a href="#">Бесплатная доставка по России</a>
+          Бесплатная доставка по России
         </li>
       </ul>
     </nav>
     </header>
     <main>
       <section class="slogan">
-        <h1>Милые штуки ручной работы для дома</h1>
+        <h1>Милые штуки ручной<br> работы для дома</h1>
       </section>
       <section class="category">
         <ul class="category__list">
           <li class="category__list-item">
-            <a class="category__list-item-link" href="#">
-              <div class="category__list-item-info  category__list-item-info--chandelier">
-              Предметы интерьера
-              </div>
+            <a class="category__list-item-info  category__list-item-info--chandelier" href="#">
+              <p class="category__list-item-info-title">Предметы интерьера</p>
             </a>
           </li>
           <li class="category__list-item">
-            <a class="category__list-item-link" href="#">
-              <div class="category__list-item-info  category__list-item-info--toys">
-              Детские игрушки
-              </div>
+            <a class="category__list-item-info  category__list-item-info--toys" href="#">
+              <p class="category__list-item-info-title">Детские игрушки</p>
             </a>
           </li>
         </ul>
       </section>
       <article class="week-item">
-        <h2 class="week-item__title">Вязаные корзинки</h2>
-        <p class="week-item__subtitle">Товар недели</p>
+        <div class="week-item__name">
+          <h2 class="week-item__name-title">Вязаные корзинки</h2>
+          <p class="week-item__name-subtitle">Товар недели</p>
+        </div>
         <div class="week-item__description">
           <p class="week-item__description-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <div class="week-item__table-feature">
             <ul class="week-item__table-list">
-              <li class="week-item__table-list-item">Цвет</li>
+              <li class="week-item__table-list-item">Цвет:</li>
               <li class="week-item__table-list-item">"Тиффани"/серый</li>
             </ul>
             <ul class="week-item__table-list">
-              <li class="week-item__table-list-item">Диаметр</li>
+              <li class="week-item__table-list-item">Диаметр:</li>
               <li class="week-item__table-list-item">25см</li>
             </ul>
             <ul class="week-item__table-list">
-              <li class="week-item__table-list-item">Высота</li>
+              <li class="week-item__table-list-item">Высота:</li>
               <li class="week-item__table-list-item">15см</li>
             </ul>
-          <p class="week-item__foto-price">Цена: 990 руб.</p>
           </div>
         </div>
         <div class="week-item__foto">
           <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки">
         </div>
-        <a class="button" href="#">Заказать</a>
+        <div class="week-item__order">
+          <p class="week-item__order-price">Цена: 990 руб.</p>
+          <a class="button" href="#">Заказать</a>
+        </div>
       </article>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
@@ -118,12 +118,13 @@
       </section>
       <section class="feedback">
         <h2 class="feedback__title">Отзывы</h2>
-        <blockquote class="feedback__text">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="feedback__source">
+        <div class="feedback__blockquote">
+<!--          <div class="feedback__blockquote-foto"><img src="img/review@1x.jpg"></div>-->
+          <p class="feedback__blockquote-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="feedback__blockquote-source">
             <b>Анастасия Красильникова</b> @misssssiskras
-          </cite>
-        </blockquote>
+          </p>
+        </div>
         <div class="feedback__controls">
           <a class="feedback__controls--prev" href="#"></a>
           <a class="feedback__controls--next" href="#"></a>
@@ -141,7 +142,7 @@
           </ul>
           <ul class="contacts__data-list">
             <li class="contacts__data-list-item">адрес:</li>
-            <li class="contacts__data-list-item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            <li class="contacts__data-list-item">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
             </li>
           </ul>
         </div>
@@ -152,7 +153,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="conteiner">
+      <div class="container">
         <div class="page-footer__logo">
           <img src="" width="102" height="34" alt="mishka">
         </div>
@@ -178,7 +179,7 @@
           <li class="popup__item-size">M</li>
           <li class="popup__item-size">L</li>
         </ul>
-        <a class="button--color" href="#">Добавить</a>
+        <a class="button" href="#">Добавить</a>
       </section>
 
 
