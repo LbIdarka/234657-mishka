@@ -43,6 +43,17 @@
   display: none;
 }
 
+.menu__link {
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
 
 
 @media ($tablet-widths){
@@ -142,6 +153,7 @@
   .menu__list-item {
     padding: 35px 0;
     text-align: left;
+    font-size: 17px;
 
 
     &:first-child {
