@@ -45,13 +45,9 @@ feedback__blockquote-source {
 @media ($tablet-widths) {
 
   .feedback {
-    position: relative;
-    display: flex;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 86px;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background: url("/img/review@1x.jpg") no-repeat 0 0;
 
     .button {
@@ -61,6 +57,14 @@ feedback__blockquote-source {
     margin-right: 6.5104%;
     align-self: flex-start;
     }
+  }
+
+  .feedback__wrapper {
+    position: relative;
+    display: flex;
+    @include container;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .feedback__title {
