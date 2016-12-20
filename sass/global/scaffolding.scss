@@ -26,3 +26,8 @@ a {
   @include container;
   @include clearfix;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
