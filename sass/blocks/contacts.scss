@@ -65,6 +65,7 @@
     margin-top: 72px;
     margin-bottom: 57px;
     @include clearfix;
+    background: url("/img/icons/icon-flag.svg") no-repeat 90% 0;
     }
 
   .contacts__data {
@@ -73,8 +74,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
     b {
       width: 100%;
+      margin: 20px 0;
       font-size: 43px;
       line-height: 50px;
     }
@@ -115,6 +118,7 @@
     margin-bottom: 105px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background-position: 7% 20%;
   }
 
   .contacts__data {

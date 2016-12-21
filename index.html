@@ -8,6 +8,7 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+  -
     <header class="page-header">
     <nav class="menu">
       <div class="logo">
@@ -28,12 +29,24 @@
       </ul>
       <ul class="menu__list-users">
         <li class="menu__list-users-item  menu__list-users-item--search">
-          <a href="#" class="menu__link  menu__list-users-item-link">
-            <p class="menu__list-users-item-hidden">Поиск по сайту</p>
+          <a href="#" class="menu__link  menu__list-users-item-link  menu__list-users-item-link--search">
+            <svg class="menu__list-users-item-link-icon  menu__list-users-item-link-icon--search" width="20" height="17">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-search"></use>
+            </svg>
+            <p class="menu__list-users-item-text  menu__list-users-item-text--hidden">
+              Поиск по сайту
+            </p>
           </a>
         </li>
-        <li class="menu__list-users-item  menu__list-users-item--cart">
-          <a href="#" class="menu__link  menu__list-users-item-link">Корзина: пока пуста</a>
+        <li class="menu__list-users-item">
+          <a href="#" class="menu__link  menu__list-users-item-link">
+            <svg class="menu__list-users-item-link-icon  menu__list-users-item-link-icon--cart" width="20" height="17">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-cart"></use>
+            </svg>
+            <p class="menu__list-users-item-text">
+              Корзина: пока пуста
+            </p>
+          </a>
         </li>
       </ul>
       <ul class="menu__list-new">
@@ -58,11 +71,17 @@
           <li class="category__list-item">
             <a class="category__list-item-info  category__list-item-info--chandelier" href="#">
               <p class="category__list-item-info-title">Предметы интерьера</p>
+              <svg class="category__list-item-info-icon  category__list-item-info-icon--chandelier" width="41" height="62">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-interior"></use>
+            </svg>
             </a>
           </li>
           <li class="category__list-item">
             <a class="category__list-item-info  category__list-item-info--toys" href="#">
               <p class="category__list-item-info-title">Детские игрушки</p>
+              <svg class="category__list-item-info-icon  category__list-item-info-icon--toy" width="61" height="61">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-toy"></use>
+            </svg>
             </a>
           </li>
         </ul>
@@ -134,8 +153,13 @@
           </p>
         </div>
         <div class="feedback__controls">
-          <a class="feedback__controls--prev" href="#"></a>
-          <a class="feedback__controls--next" href="#"></a>
+          <a class="feedback__controls-link" href="#">
+            <svg class="feedback__controls-icon  feedback__controls-icon--prev" width="51" height="26">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-left-arrow"></use>
+            </svg></a>
+          <a class="feedback__controls-link  feedback__controls-link--next" href="#"><svg class="feedback__controls-icon  feedback__controls-icon--next" width="51" height="26">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-right-arrow"></use>
+            </svg></a>
         </div>
         <a class="button" href="#">Написать</a>
         </div>
@@ -179,9 +203,15 @@
           </a>
         </div>
         <div class="social">
-          <a href="#" class="social__btn">Инстаграмм</a>
-          <a href="#" class="social__btn">Фейсбук</a>
-          <a href="#" class="social__btn">Твиттер</a>
+          <a href="#" class="social__btn"><svg class="social__btn-icon" width="22" height="21">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-insta"></use>
+            </svg><p class="social__btn--hidden">Инстаграмм</p></a>
+          <a href="#" class="social__btn"><svg class="social__btn-icon" width="15" height="19">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-fb"></use>
+            </svg><p class="social__btn--hidden">Фейсбук</p></a>
+          <a href="#" class="social__btn"><svg class="social__btn-icon" width="24" height="20">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-twitter"></use>
+            </svg><p class="social__btn--hidden">Твиттер</p></a>
         </div>
         <div class="copyright">
           <b>Разработано</b>

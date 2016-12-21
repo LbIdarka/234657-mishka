@@ -27,16 +27,27 @@ feedback__blockquote-source {
   display: flex;
   width: 258px;
   min-height: 50px;
+}
 
-  &--prev {
-    width: 129px;
-    border: $border;
-  }
+.feedback__controls-link {
+  display: flex;
+  width: 129px;
+  border: $border;
 
   &--next {
-    width: 129px;
-    border: $border;
     border-left: none;
+  }
+}
+
+.feedback__controls-icon {
+  margin: auto;
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
   }
 }
 
@@ -94,9 +105,14 @@ feedback__blockquote-source {
 
   .feedback__controls {
     position: absolute;
+    width: 138px;
     margin-top: 20px;
     bottom: 20px;
-    right: 50px;
+    right: 81px;
+  }
+
+  .feedback__controls-link {
+    border: none;
   }
 }
 
@@ -124,5 +140,9 @@ feedback__blockquote-source {
 
   .feedback__blockquote-text {
     width: 770px;
+  }
+
+  .feedback__controls {
+    right: 32px;
   }
 }

@@ -7,8 +7,33 @@
   }
 
 .about-us__list-item {
-  padding-top: 87px;
+  padding-top: 60px;
+  margin-bottom: 34px;
   @include font-style(17px, 24px, 700, #000000);
+
+  &--flower {
+    background: url("/img/icons/icon-feature-1.svg") no-repeat;
+  }
+
+  &--money {
+    background: url("/img/icons/icon-feature-3.svg") no-repeat;
+  }
+
+  &--heart {
+    background: url("/img/icons/icon-feature-5.svg") no-repeat;
+  }
+
+  &--tangle {
+    background: url("/img/icons/icon-feature-2.svg") no-repeat;
+  }
+
+  &--rocket {
+    background: url("/img/icons/icon-feature-4.svg") no-repeat;
+  }
+
+  &--gift {
+    background: url("/img/icons/icon-feature-6.svg") no-repeat;
+  }
 }
 
 .about-us__item-text {
