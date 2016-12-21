@@ -14,9 +14,19 @@
 
 .copyright__logo {
   padding-left: 30px;
+}
+
+.copyright__logo svg {
+  width: 27px;
+  height: 34px;
+  fill: $color-green;
 
   &:hover {
-    color: #46c1ae;
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
   }
 }
 

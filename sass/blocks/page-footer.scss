@@ -32,6 +32,19 @@
     padding: 51px 0 51px;
     flex-grow: 1;
   }
+
+  .page-footer__logo svg {
+    width: 102px;
+    height: auto;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 

@@ -55,8 +55,7 @@
   }
 
   .video__play {
-    width: 100%;
-    height: 456px;
+    height: 455px;
   }
 
   .video__description {
@@ -93,20 +92,20 @@
 @media ($desktop-widths) {
 
   .video {
-    min-height: 457px;
+    min-height: 455px;
     @include container;
     margin-bottom: 105px;
     flex-direction: row;
     flex-wrap: nowrap;
 
     img {
-      width: 668px;
+//      width: 668px;
     }
   }
 
   .video__description {
     width: 368px;
-    height: 456px;
+    height: 452px;
     align-content:  space-around;
 
     .button {
