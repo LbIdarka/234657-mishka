@@ -1,6 +1,8 @@
 .contacts {
-  margin-top: 40px;
   margin-bottom: 38px;
+  padding-top: 40px;
+  background: url("/img/bg-zigzag-line.svg") no-repeat 0 0;
+  background-size: auto 7px;
 }
 
 .contacts__data {
@@ -62,17 +64,17 @@
 @media ($tablet-widths) {
 
   .contacts {
-    margin-top: 72px;
     margin-bottom: 57px;
-    @include clearfix;
-    background: url("/img/icons/icon-flag.svg") no-repeat 90% 0;
-    }
+    padding-top: 72px;
+    background-size: auto 17px;
+  }
 
   .contacts__data {
     display: flex;
     @include container;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: url("/img/icons/icon-flag.svg") no-repeat 96% 0;
 
 
     b {
@@ -113,33 +115,40 @@
 @media ($desktop-widths) {
 
   .contacts {
+    background-position: 0 0;
+    background-size: auto 23px;
+    background-repeat: repeat-x;
+  }
+
+  .contacts-wrapper {
     display: flex;
-    @include container;
     margin-bottom: 105px;
+    @include container;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-position: 7% 20%;
   }
 
   .contacts__data {
     display: flex;
     width: 350px;
-    margin-left: 176px;
     align-self: center;
     flex-wrap: wrap;
     flex-direction: column;
     border-spacing: 0 15px;
+    background-position: 0 0;
 
     b {
       margin-bottom: 30px;
       font-size: 53px;
       line-height: 57px;
+      text-align: right;
     }
   }
 
   .contacts__data-list {
     width: 100%;
     margin: 0;
+    margin-left: 100px;
   }
 
   .contacts__map {

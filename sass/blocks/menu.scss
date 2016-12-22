@@ -41,16 +41,17 @@
     margin-left: 35px;
     align-self: center;
     fill: #d3d2d2;
-
-    &:hover {
-      fill: #63d1bb;
-    }
-
-    &:active {
-      stroke: #e7f8f5;
-    }
   }
 }
+
+.menu__list-users-item-link:hover svg {
+  fill: #63d1bb;
+
+    &:active svg{
+      fill: #e7f8f5;
+    }
+  }
+
 
 .menu__list-users-item-text {
   margin: 0;

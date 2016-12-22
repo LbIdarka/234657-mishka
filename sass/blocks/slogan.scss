@@ -21,6 +21,19 @@ h1 {
 
 @media ($tablet-widths) {
 
+  main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    display: flex;
+    width: 100%;
+    height: 15px;
+    background: url("/img/bg-zigzag-fill.svg") repeat-x 0 0;
+    background-size: auto 23px;
+    z-index: 3;
+  }
+
   .slogan {
     display: flex;
     position: relative;
@@ -34,19 +47,23 @@ h1 {
       background-image: url("/img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
     }
-  }
 
-  h1 {
-    margin: auto;
-    font-size: 43px;
-    line-height: 50px;
-    text-align: center;
+    h1 {
+      margin: auto;
+      font-size: 43px;
+      line-height: 50px;
+      text-align: center;
+    }
   }
 }
 
 
-
 @media ($desktop-widths) {
+
+  main::after {
+    bottom: 110px;
+    background-size: auto 34px;
+  }
 
   .slogan {
     position: relative;

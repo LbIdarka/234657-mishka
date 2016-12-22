@@ -1,6 +1,12 @@
 .week-item {
-  @include container;
+  padding-bottom: 2px;
   @include font-style(15px, 24px, 400, #444444);
+  background: url("/img/bg-zigzag-line.svg") no-repeat 100% 100%;
+  background-size: auto 7px;
+}
+
+.week-item__wrapper {
+  @include container;
 }
 
 .week-item__name {
@@ -51,6 +57,10 @@
 @media ($tablet-widths) {
 
   .week-item {
+    background-size: auto 17px;
+  }
+
+  .week-item__wrapper{
     position: relative;
     display: flex;
     margin-bottom: 70px;
@@ -127,6 +137,8 @@
     margin-top: 75px;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-repeat: repeat-x;
+    background-size: auto 23px;
   }
 
   .week-item__order {
