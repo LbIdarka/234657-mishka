@@ -8,7 +8,7 @@
   align-items: center;
   box-sizing: border-box;
   border: $border;
-  box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
 
   .button {
     width: 350px;
@@ -16,6 +16,14 @@
     background-color: $color-green;
     color: #ffffff;
     border: none;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+    }
   }
 }
 
@@ -46,6 +54,14 @@
   @include font-style(17px, 16px, 700, $text-color);
   text-align: center;
   border: 2px solid #ececec;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 

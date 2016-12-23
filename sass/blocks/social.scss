@@ -1,11 +1,32 @@
 .social {
   display: flex;
-  width: 260px;
-  justify-content: space-around;
-  border-bottom: 1px solid #e5e5e5;
+  width: 144px;
+  justify-content: space-between;
+}
 
-  &__btn {
-    padding: 25px 0 28px;
+.social__btn {
+  padding: 25px 0 28px;
+
+  &--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+}
+
+.social__btn-icon {
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
   }
 }
 
@@ -14,10 +35,8 @@
 @media ($tablet-widths) {
 
   .social {
-    width: 228px;
     border-bottom: none;
     padding: 51px 0 51px;
-    flex-grow: 1;
 
     &__btn {
       padding: 0;
@@ -30,9 +49,9 @@
 @media ($desktop-widths) {
 
   .social {
-    width: 350px;
     border-bottom: none;
     padding: 51px 0 51px;
+
 
     &__btn {
       padding: 0;

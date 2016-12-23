@@ -8,6 +8,31 @@
   align-content: flex-end;
   justify-content: center;
   border: $border;
+  background: url(/img/icons/icon-video.svg) no-repeat 15% 4%;
+}
+
+.video__play {
+  position: relative;
+
+  img {
+    display: block;
+  }
+}
+
+.video__play-icon {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+
+  &:hover {
+    fill: #62d1ba;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    fill: #d0f1ea;
+    transform: scale(0.8);
+  }
 }
 
 .video__description {
@@ -52,11 +77,16 @@
     min-height: 743px;
     flex-wrap: wrap;
     border: none;
+    background-position: 6% 73%;
+  }
 
-    img {
-      width: 100%;
-      height: 456px;
-    }
+  .video__play {
+    min-height: 455px;
+  }
+
+  .video__play-icon {
+    top: 43%;
+    left: 43%;
   }
 
   .video__description {
@@ -74,9 +104,9 @@
 
   .video__description-title {
     position: relative;
-    width: 585px;
-    margin-left: 68px;
-    margin-bottom: 0;
+    width: 449px;
+    margin: 0;
+    margin-top: 40px;
     font-size: 20px;
     text-align: left;
   }
@@ -93,20 +123,17 @@
 @media ($desktop-widths) {
 
   .video {
-    min-height: 457px;
+    min-height: 455px;
     @include container;
     margin-bottom: 105px;
     flex-direction: row;
     flex-wrap: nowrap;
-
-    img {
-      width: 668px;
-    }
+    background-position: 74% 10%;
   }
 
   .video__description {
     width: 368px;
-    height: 456px;
+    height: 452px;
     align-content:  space-around;
 
     .button {
@@ -116,7 +143,7 @@
 
   .video__description-title {
     width: 231px;
-    margin-left: 0;
+    margin-top: 91px;
   }
 
   .video__description-info {

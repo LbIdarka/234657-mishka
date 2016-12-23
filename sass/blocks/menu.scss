@@ -6,7 +6,6 @@
 }
 
 .menu__list-item {
-
   padding: 31px 0;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
@@ -21,7 +20,7 @@
   padding: 37px 0;
   @include font-style(17px, 24px, 700, #000000);
   border-bottom: $border;
-  text-align: center;
+  text-align: left;
 
     &:first-child {
     border-top: none;
@@ -32,7 +31,29 @@
   }
 }
 
-.menu__list-users-item-hidden {
+.menu__list-users-item-link {
+  display: flex;
+  margin: 0;
+
+  svg {
+    align-self: center;
+    margin-right: 27px;
+    margin-left: 35px;
+    align-self: center;
+    fill: #d3d2d2;
+  }
+}
+
+.menu__list-users-item-link:hover svg {
+  fill: #63d1bb;
+
+    &:active svg{
+      fill: #e7f8f5;
+    }
+  }
+
+
+.menu__list-users-item-text {
   margin: 0;
 }
 
@@ -107,9 +128,26 @@
     }
   }
 
-  .menu__list-users-item-hidden {
-    font-size: 0;
+  .menu__list-users-item-link {
+    justify-content: space-around;
+    position: relative;
+
+    &--search {
+    min-height: 100px;
+    }
   }
+
+  .menu__list-users-item-text--hidden {
+    justify-content: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
 
   .menu__list-new {
     display: flex;
@@ -176,7 +214,7 @@
   }
 
   .menu__list-users-item {
-    padding: 35px 0;
+    padding: 0;
 
     &:first-child {
       width: 84px;
