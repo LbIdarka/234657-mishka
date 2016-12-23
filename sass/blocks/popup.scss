@@ -1,9 +1,6 @@
 .popup {
-  position: absolute;
-  display: none;
+  display: flex;
   width: 320px;
-  top: 115%;
-  left: 9%;
   margin: auto;
   padding: 35px 30px 46px;
   flex-wrap: wrap;
@@ -12,7 +9,6 @@
   box-sizing: border-box;
   border: $border;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
 
   .button {
     width: 350px;
@@ -29,10 +25,6 @@
       background-color: #59d5bc;
     }
   }
-}
-
-.popup-show {
-  display: block;
 }
 
 .popup__title {

@@ -42,9 +42,9 @@ input[type="radio"] {
   @include font-style(17px, 3px, 700, $color-green);
   text-transform: uppercase;
 
-//  &:nth-of-type(5) {
-//    width: 81px;
-//  }
+  &:nth-of-type(5) {
+    width: 81px;
+  }
 }
 
 .filter__wrapper-item {
