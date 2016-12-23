@@ -2,6 +2,7 @@
 
 .menu {
   display: block;
+  min-height: 80px;
   margin: 0 auto;
 }
 
@@ -76,6 +77,94 @@
 }
 
 
+.menu__toggle {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 55px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+
+.menu--closed .menu__toggle::before {
+content: "";
+position: absolute;
+top: 31px;
+left: 0;
+
+width: 20px;
+height: 2px;
+
+background-color: #000000;
+box-shadow: 0 7px 0 0 #000000,
+            0 14px 0 0 #000000;
+}
+
+.menu--opened .menu__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 260px;
+
+    width: 21px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media ($mobile-widths-only) {
+
+  .menu--closed .menu__list-item {
+    display: none;
+  }
+
+  .menu--closed .menu__list-users-item {
+    display: none;
+  }
+
+  .menu--no-js .menu__toggle {
+    display: none;
+  }
+
+  .menu--no-js {
+    position: static;
+    height: auto;
+  }
+
+  .menu--no-js .menu__list-item {
+    display: block;
+  }
+
+  .menu--no-js .menu__list-users-item {
+    display: block;
+  }
+}
+
+
 
 @media ($tablet-widths){
 
@@ -86,6 +175,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     z-index: 2;
+  }
+
+  .menu__toggle {
+    display: none;
   }
 
   .menu__list {
