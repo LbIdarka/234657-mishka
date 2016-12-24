@@ -1,9 +1,9 @@
 .popup {
-  position: absolute;
+  position: fixed;
   display: none;
   width: 320px;
-  top: 115%;
-  left: 9%;
+  top: 0;
+  left: 0%;
   margin: auto;
   padding: 35px 30px 46px;
   flex-wrap: wrap;
@@ -31,7 +31,7 @@
   }
 }
 
-.popup-show {
+.popup--show {
   display: block;
 }
 
@@ -79,6 +79,8 @@
   .popup {
     width: 566px;
     padding: 52px 106px 46px;
+    left: 23%;
+    z-index: 4;
 
     .button {
     width: 350px;
@@ -96,5 +98,14 @@
 
   .popup__item-size {
     width: 111px;
+  }
+}
+
+
+
+@media ($desktop-widths) {
+
+  .popup {
+    left: 32%;
   }
 }

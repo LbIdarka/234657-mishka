@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 34px 28px 30px;
+  padding: 26px 28px 12px;
   box-sizing: border-box;
   border: $border;
 
@@ -37,7 +37,7 @@
 }
 
 .catalog-item__info-description {
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   @include font-style(13px, 30px, 400, $text-color);
 }
 
@@ -88,6 +88,7 @@
 
   .catalog-item__info {
     width: 50%;
+    padding-bottom: 26px;
   }
 
   .catalog-item__info-title {
@@ -106,6 +107,10 @@
 
 
 @media ($desktop-widths) {
+
+  .catalog {
+    margin: 131px auto 41px;
+  }
 
   .catalog-item {
     width: 316px;

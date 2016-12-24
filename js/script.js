@@ -1,3 +1,38 @@
+var navMenu = document.querySelector(".menu");
+var navToggle = document.querySelector(".menu__toggle");
+
+  navMenu.classList.remove("menu--nojs");
+
+  navToggle.addEventListener('click', function() {
+    if (navMenu.classList.contains("menu--closed")) {
+      navMenu.classList.remove("menu--closed");
+      navMenu.classList.add("menu--opened");
+    } else {
+      navMenu.classList.add("menu--closed");
+      navMenu.classList.remove("menu--opened");
+    }
+  });
+
+
+
+var link = document.querySelector(".popup-buy");
+var popup = document.querySelector(".popup");
+
+  link.addEventListener('click', function() {
+    event.preventDefault();
+    popup.classList.add("popup--show");
+  });
+
+  window.addEventListener("keydown", function() {
+    if (event.keyCode === 27) {
+    if (popup.classList.contains("popup--show")) {
+      popup.classList.remove("popup--show");
+      }
+    }
+  });
+
+
+
 var myMap;
 var myPlacemark;
 
@@ -11,40 +46,17 @@ function init () {
         // При инициализации карты обязательно нужно указать
         // её центр и коэффициент масштабирования.
         center: [59.93643449817495,30.321726043655303], // Москва
-        zoom: 16
+        zoom: 17
     }, {
         searchControlProvider: 'yandex#search'
     });
 
-    myPlacemark = new ymaps.Placemark([59.93863106417265,30.3230545], {}, {
+    myPlacemark = new ymaps.Placemark([59.93643449817495,30.321726043655303], {}, {
         iconLayout: 'default#image',
         iconImageHref: "img/icons/icon-map-pin.svg",
         iconImageSize: [67, 100],
-        iconImageOffset: [-90, 130]
+        iconImageOffset: [-30, -55]
     });
 
       myMap.geoObjects.add(myPlacemark);
     }
-
-var link = document.querySelector(".button");
-var popup = document.querySelector(".popup");
-var close = document.querySelector(".week-item");
-
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("popup-show");
-  });
-
-  close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("popup-show");
-  });
-
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-    if (popup.classList.contains("popup-show")) {
-      popup.classList.remove("popup-show");
-      }
-    }
-  })
-

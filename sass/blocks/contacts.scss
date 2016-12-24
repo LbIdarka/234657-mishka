@@ -9,7 +9,7 @@
   display: table;
   width: 100%;
   @include container;
-  border-spacing: 0 25px;
+  border-spacing: 0 28px;
 
   b {
     display: table-caption;
@@ -61,7 +61,8 @@
 
 .button {
   @include container;
-  margin-top: 39px;
+  margin-top: 48px;
+  margin-bottom: 44px;
 }
 
 
@@ -70,7 +71,7 @@
 
   .contacts {
     margin-bottom: 57px;
-    padding-top: 72px;
+    padding-top: 62px;
     background-size: auto 17px;
   }
 
@@ -79,7 +80,7 @@
     @include container;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: url("/img/icons/icon-flag.svg") no-repeat 96% 0;
+    background: url("/img/icons/icon-flag.svg") no-repeat 100% 0;
 
 
     b {
@@ -92,7 +93,7 @@
 
   .contacts__data-list {
     width: 50%;
-    margin-bottom: 57px;
+    margin-bottom: 25px;
   }
 
   .contacts__data-list-item {
@@ -120,6 +121,8 @@
 @media ($desktop-widths) {
 
   .contacts {
+    margin-bottom: 56px;
+    padding-top: 94px;
     background-position: 0 0;
     background-size: auto 23px;
     background-repeat: repeat-x;

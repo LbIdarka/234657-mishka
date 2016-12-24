@@ -1,11 +1,12 @@
 .feedback {
   @include container;
-  margin-top: 65px;
+  margin-top: 50px;
   padding-bottom: 45px;
 
   .button {
     width: 100%;
     margin-bottom: 0;
+    margin-top: 33px;
   }
 }
 
@@ -20,6 +21,7 @@
 }
 
 feedback__blockquote-source {
+  margin: 25px 0;
   @include font-style(18px, 24px, 400, #000000);
   font-style: normal;
 }
@@ -58,8 +60,8 @@ feedback__blockquote-source {
 
   .feedback {
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 86px;
+    margin-top: 21px;
+    margin-bottom: 68px;
     background: url("/img/review@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -87,7 +89,6 @@ feedback__blockquote-source {
   .feedback__title {
     order: 1;
     margin-top: 79px;
-    margin-left: 6.5104%;
     font-size: 43px;
     line-height: 50px;
   }
@@ -101,15 +102,14 @@ feedback__blockquote-source {
 
   .feedback__blockquote-source {
     width: 238px;
-    margin-top: 20px;
+    margin-top: 48px;
   }
 
   .feedback__controls {
     position: absolute;
     width: 138px;
-    margin-top: 20px;
-    bottom: 20px;
-    right: 81px;
+    bottom: 4px;
+    right: 23px;
   }
 
   .feedback__controls-link {
@@ -123,8 +123,7 @@ feedback__blockquote-source {
 
   .feedback {
     @include container;
-    margin-top: 88px;
-    margin-bottom: 92px;
+    margin: 32px auto 100px;
 
     .button {
       margin-right: 0;
@@ -132,15 +131,19 @@ feedback__blockquote-source {
   }
 
   .feedback__title {
-    margin-left: 190px;
+    margin-left: 163px;
   }
 
   .feedback__blockquote {
-    margin-left: 190px;
+    margin-left: 163px;
   }
 
   .feedback__blockquote-text {
     width: 770px;
+  }
+
+  .feedback__blockquote-source {
+    margin-top: 30px;
   }
 
   .feedback__controls {
