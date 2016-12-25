@@ -15,13 +15,17 @@ var navToggle = document.querySelector(".menu__toggle");
 
 
 
-var link = document.querySelector(".popup-buy");
+var buy = document.querySelectorAll(".popup-buy");
 var popup = document.querySelector(".popup");
 
-  link.addEventListener('click', function() {
-    event.preventDefault();
-    popup.classList.add("popup--show");
-  });
+  if (buy) {
+    for (var i = 0; i < buy.length; i++) {
+      buy[i].addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("popup--show");
+      });
+    }
+  }
 
   window.addEventListener("keydown", function() {
     if (event.keyCode === 27) {

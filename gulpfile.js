@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 
+
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
