@@ -1,3 +1,6 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .inner-main__title {
   display: flex;
   min-height: 177px;
@@ -20,7 +23,7 @@
     height: 226px;
     margin-top: -70px;
     z-index: 1;
-    background: #f1f1f1 url("/img/bg-zigzag-fill.svg") repeat-x 100% 100%;
+    background: #f1f1f1 url("../img/bg-zigzag-fill.svg") repeat-x 100% 100%;
     background-size: auto 24px;
   }
 
