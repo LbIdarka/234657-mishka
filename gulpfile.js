@@ -13,7 +13,6 @@ var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var del = require("del");
-var mqpacker = require("css-mqpacker");
 
 
 gulp.task("style", function() {
@@ -23,10 +22,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 2 versions"
-      ]}),
-    mqpacker({
-      sort: true
-    })
+      ]})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -46,7 +42,7 @@ gulp.task("symbols", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("img/**/*.{png, gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
@@ -74,6 +70,7 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
+    "img /**",
     "js/**",
     "*.html"
   ], {
