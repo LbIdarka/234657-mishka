@@ -9,11 +9,11 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans bold";
   font-style: normal;
   font-weight: bold;
   src:
     local("opensansbold"),
-    url("opensansbold.woff") format("woff"),
-    url("opensansbold.woff2") format("woff");
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff");
 }

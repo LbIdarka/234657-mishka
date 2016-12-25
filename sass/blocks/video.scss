@@ -1,3 +1,6 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .video {
   position: relative;
   display: flex;
@@ -8,7 +11,7 @@
   align-content: flex-end;
   justify-content: center;
   border: $border;
-  background: url(/img/icons/icon-video.svg) no-repeat 15% 4%;
+  background: url(../img/icons/icon-video.svg) no-repeat 15% 4%;
 }
 
 .video__play {

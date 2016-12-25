@@ -1,16 +1,23 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .week-item {
-  padding-bottom: 2px;
+  padding-bottom: 18px;
   @include font-style(15px, 24px, 400, #444444);
-  background: url("/img/bg-zigzag-line.svg") no-repeat 100% 100%;
+  background: url("../img/bg-zigzag-line.svg") no-repeat 100% 100%;
   background-size: auto 7px;
 }
 
 .week-item__wrapper {
   @include container;
+
+  .button {
+    margin: 26px 0 22px;
+  }
 }
 
 .week-item__name {
-  margin-top: 35px;
+  margin-top: 27px;
 }
 
 .week-item__name-title {
@@ -20,19 +27,21 @@
 }
 
 .week-item__name-subtitle {
+  margin-top: 5px;
   @include font-style(17px, 16px, 700, #63d1bb);
   text-transform: uppercase;
   text-align: left;
 }
 
 .week-item__description {
-  margin: 32px 0 29px;
+  margin: 24px 0 29px;
 }
 
 .week-item__table-feature {
   display: table;
   width: 100%;
-  margin-top: 35px;
+  margin-top: 14px;
+  margin-bottom: 28px;
 }
 
 .week-item__table-list {
@@ -41,13 +50,13 @@
 
 .week-item__table-list-item {
   display: table-cell;
-  padding: 12px 0;
+  padding: 10px 0;
   @include font-style(15px, 20px, 400, $text-color);
   border-bottom: $border;
 }
 
 .week-item__order-price {
-  margin: 27px 0;
+  margin: 19px 0;
   @include font-style(17px, 24px, 700, $text-color);
   text-align: center;
 }
@@ -63,7 +72,7 @@
   .week-item__wrapper{
     position: relative;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 48px;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -76,7 +85,7 @@
   .week-item__name {
     display: flex;
     width: 100%;
-    margin: 64px 0 58px;
+    margin: 49px 0 54px;
     justify-content: space-between;
     align-items: center;
   }
@@ -120,10 +129,11 @@
 
   .week-item__order {
     width: 296px;
-    margin-top: -133px;
+    margin-top: -115px;
   }
 
   .week-item__order-price {
+    margin: 6px 0 31px;
     font-size: 20px;
   }
 }
@@ -131,6 +141,10 @@
 
 
 @media ($desktop-widths) {
+
+  .week-item__wrapper {
+    margin-bottom: 74px;
+  }
 
   .week-item {
     display: flex;

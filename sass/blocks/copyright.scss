@@ -1,7 +1,10 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .copyright {
   display: flex;
   @include container;
-  padding-top: 28px;
+  padding-top: 14px;
   padding-bottom: 24px;
   justify-content: center;
   align-items: center;
