@@ -42,7 +42,7 @@ gulp.task("symbols", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png, gif}")
+  return gulp.src("img/**/*.{png, jpg, gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
@@ -70,7 +70,7 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img /**",
+    "img/**/*.svg",
     "js/**",
     "*.html"
   ], {
