@@ -1,3 +1,6 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .filter {
   display: flex;
   min-height: 1433px;
@@ -42,9 +45,9 @@ input[type="radio"] {
   @include font-style(17px, 3px, 700, $color-green);
   text-transform: uppercase;
 
-  &:nth-of-type(5) {
-    width: 81px;
-  }
+//  &:nth-of-type(5) {
+//    width: 81px;
+//  }
 }
 
 .filter__wrapper-item {
@@ -136,7 +139,7 @@ input[type="checkbox"]:checked + label::after {
   left: 9px;
   width: 22px;
   height: 17px;
-  background: url(/img/icons/icon-tick.svg) no-repeat 50% 50%;
+  background: url(../img/icons/icon-tick.svg) no-repeat 50% 50%;
   background-size: 22px 17px;
 }
 

@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import 'mixins.scss';
+@import '../variables.scss';
+@import '../mixins.scss';
 
 
 body {
@@ -7,7 +7,7 @@ body {
   background: $color-bg;
   margin: 0 auto;
   min-width: 320px;
-  transition: all 1s ease;
+  transition: all 3s ease;
 }
 
 ul {

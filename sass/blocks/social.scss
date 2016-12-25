@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .social {
   display: flex;
   width: 144px;
@@ -5,7 +7,7 @@
 }
 
 .social__btn {
-  padding: 25px 0 28px;
+  padding: 15px 0 28px;
 
   &--hidden {
   position: absolute;

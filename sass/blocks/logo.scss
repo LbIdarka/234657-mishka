@@ -1,6 +1,9 @@
+@import '../variables.scss';
+
 .logo {
+  position: relative;
   display: block;
-  padding: 22px 0;
+  padding: 18px 0;
   text-align: center;
 }
 
@@ -16,6 +19,8 @@
     opacity: 0.3;
   }
 }
+
+
 
 @media ($tablet-widths){
 
