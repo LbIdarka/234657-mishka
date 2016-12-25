@@ -260,7 +260,7 @@ box-shadow: 0 6px 0 0 #000000,
   }
 
   .menu__list-new-item {
-    padding: 19px 0;
+    padding: 10px 0;
     @include font-style(15px, 24px, 400, $text-color);
   }
 
@@ -326,9 +326,9 @@ box-shadow: 0 6px 0 0 #000000,
     }
   }
 
-  .menu__list-users-item-link {
-    margin-left: 44px;
-  }
+//  .menu__list-users-item-link {
+//    margin-left: 44px;
+//  }
 
   .menu__list-new {
     display: flex;

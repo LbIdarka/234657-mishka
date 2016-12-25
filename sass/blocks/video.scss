@@ -12,6 +12,14 @@
   justify-content: center;
   border: $border;
   background: url(../img/icons/icon-video.svg) no-repeat 15% 4%;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__play {
@@ -26,6 +34,7 @@
   position: absolute;
   top: 25%;
   left: 30%;
+  cursor: pointer;
 
   &:hover {
     fill: #62d1ba;
@@ -43,14 +52,6 @@
   width: 191px;
   min-height: 257px;
   flex-wrap: wrap;
-
-  &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  }
 
   .button {
   width: 192px;
