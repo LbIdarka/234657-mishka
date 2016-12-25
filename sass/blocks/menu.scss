@@ -37,18 +37,19 @@
   display: flex;
   margin: 0;
   justify-content: center;
+}
 
-  svg {
-    align-self: center;
-    margin-right: 27px;
-    margin-left: -61px;
-    fill: #d3d2d2;
+.menu__list-users-item-link-icon {
+  align-self: center;
+  margin-right: 27px;
+  margin-left: -61px;
+  fill: #d3d2d2;
 
-    &:last-child {
-    margin-left: -27px;
-    }
+  &--cart {
+  margin-left: -27px;
   }
 }
+
 
 .menu__list-users-item-link:hover svg {
   fill: #63d1bb;
