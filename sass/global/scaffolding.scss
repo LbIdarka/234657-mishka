@@ -3,6 +3,7 @@
 
 
 body {
+  font-family: "Open Sans", "Arial", sans-serif;
   @include font-style(16px, 24px, 400, #000000);
   background: $color-bg;
   margin: 0 auto;

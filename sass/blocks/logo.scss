@@ -44,6 +44,7 @@
 @media ($desktop-widths) {
   .logo {
     width: 355px;
+    min-height: 100px;
     padding: 13px 0;
     order: 2;
     justify-content: center;
@@ -53,5 +54,6 @@
 
   .logo img {
     width: 150px;
+    vertical-align: middle;
   }
 }

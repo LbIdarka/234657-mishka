@@ -119,11 +119,11 @@
           <ul class="filter__wrapper-inner">
             <li class="filter__wrapper-inner-item">
               <label for="name" class="filter__label">Имя:</label>
-              <input type="text" id="name" name="name" placeholder="Введите ваше имя*">
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя*"  required>
             </li>
             <li class="filter__wrapper-inner-item">
               <label for="surname" class="filter__label">Фамилия:</label>
-              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*"  required>
             </li>
             <li class="filter__wrapper-inner-item">
               <label for="middle-name" class="filter__label">Отчество:</label>
@@ -136,7 +136,7 @@
             <div class="filter__wrapper-contacts  filter__wrapper-contacts--info">
               <p class="filter__wrapper-title  filter__wrapper-title--phone  filter__wrapper-title--green-line">Тел</p>
               <label for="phone" class="filter__label filter__label--hidden">Телефон</label>
-              <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
               <svg class="filter__label-icon" width="25" height="24">
                 <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-phone"></use>
               </svg>
@@ -144,7 +144,7 @@
             <div class="filter__wrapper-contacts  filter__wrapper-contacts--info">
               <p class="filter__wrapper-title  filter__wrapper-title--green-line">E-mail</p>
               <label for="email" class="filter__label--hidden">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Ваш Email">
+              <input type="email" id="email" name="email" placeholder="Ваш Email"  required>
               <svg class="filter__label-icon" width="32" height="21">
                 <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-mail"></use>
               </svg>
@@ -154,7 +154,8 @@
         <div class="filter__wrapper  filter__wrapper--container">
           <p class="filter__wrapper-title  filter__wrapper-title--green-line">Доп</p>
           <label for="more" class="filter__label--hidden">Дополнительно</label>
-          <textarea id="more" name="more" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+          <textarea id="more" name="more" placeholder="Опишите все ваши  пожелания к заказу">
+          </textarea>
         </div>
         <div class="filter__wrapper">
           <div class="filter__wrapper-tip  filter__wrapper--container">
@@ -182,15 +183,24 @@
           </a>
         </div>
         <div class="social">
-          <a href="#" class="social__btn"><svg class="social__btn-icon" width="22" height="21">
+          <a href="#" class="social__btn">
+            <svg class="social__btn-icon" width="22" height="21">
               <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-insta"></use>
-            </svg><p class="social__btn--hidden">Инстаграмм</p></a>
-          <a href="#" class="social__btn"><svg class="social__btn-icon" width="15" height="19">
+            </svg>
+            <p class="social__btn--hidden">Инстаграмм</p>
+          </a>
+          <a href="#" class="social__btn">
+            <svg class="social__btn-icon" width="15" height="19">
               <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-fb"></use>
-            </svg><p class="social__btn--hidden">Фейсбук</p></a>
-          <a href="#" class="social__btn"><svg class="social__btn-icon" width="24" height="20">
+            </svg>
+            <p class="social__btn--hidden">Фейсбук</p>
+          </a>
+          <a href="#" class="social__btn">
+            <svg class="social__btn-icon" width="24" height="20">
               <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-twitter"></use>
-            </svg><p class="social__btn--hidden">Твиттер</p></a>
+            </svg>
+            <p class="social__btn--hidden">Твиттер</p>
+          </a>
         </div>
         <div class="copyright">
           <b>Разработано</b>
