@@ -137,6 +137,7 @@
 @media ($desktop-widths) {
 
   .category::after {
+    margin-top: -113px;
     bottom: -3px;
   }
 

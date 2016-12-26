@@ -187,11 +187,12 @@ box-shadow: 0 6px 0 0 #000000,
   .menu__list {
     display: flex;
     width: 367px;
+    min-height: 80px;
     order: 3;
   }
 
   .menu__list-item {
-    padding: 10px 0;
+    padding: 16px 0;
     flex-grow: 1;
     font-size: 15px;
     text-align: left;
@@ -204,6 +205,7 @@ box-shadow: 0 6px 0 0 #000000,
 
   .menu__list-users {
     display: flex;
+    height: 80px;
     order: 2;
   }
 
@@ -213,14 +215,15 @@ box-shadow: 0 6px 0 0 #000000,
     box-sizing: border-box;
 
     &:first-child {
-      width: 84px;
-      border-right: $border;
-      border-bottom: none;
+      width: 82px;
+      align-self: center;
+      border: none;
     }
 
      &:nth-child(2) {
-      width: 260px;
-      align-self: center;
+      width: 264px;
+      padding: 28px 0;
+      border-left: $border;
     }
   }
 
@@ -228,10 +231,6 @@ box-shadow: 0 6px 0 0 #000000,
     position: relative;
     justify-content: space-between;
     margin-left: 33px;
-
-    &--search {
-    min-height: 100px;
-    }
 
     svg {
       margin: 0;
@@ -260,7 +259,7 @@ box-shadow: 0 6px 0 0 #000000,
   }
 
   .menu__list-new-item {
-    padding: 10px 0;
+    padding: 16px 0;
     @include font-style(15px, 24px, 400, $text-color);
   }
 
@@ -284,13 +283,14 @@ box-shadow: 0 6px 0 0 #000000,
 
   .menu__list {
     display: flex;
-    width: 375px;
+    width: 346px;
+    height: 80px;
     order: 1;
     margin: 0;
   }
 
   .menu__list-item {
-    padding: 35px 0;
+    padding: 24px 0;
     text-align: left;
     font-size: 17px;
 
@@ -309,26 +309,24 @@ box-shadow: 0 6px 0 0 #000000,
   .menu__list-users {
     display: flex;
     width: 348px;
+    height: 80px;
     order: 3;
     justify-content: flex-end;
     border-bottom: none;
   }
 
   .menu__list-users-item {
-    padding: 0;
+    padding: 24px 0;
 
     &:first-child {
       width: 84px;
+      padding: 28px 0;
     }
 
     &:last-child {
       width: 265px;
     }
   }
-
-//  .menu__list-users-item-link {
-//    margin-left: 44px;
-//  }
 
   .menu__list-new {
     display: flex;
@@ -340,7 +338,7 @@ box-shadow: 0 6px 0 0 #000000,
   .menu__list-new-item {
     display: block;
     padding: 0;
-    padding-top: 11px;
+    padding-top: 21px;
     font-weight: 700;
     box-sizing: border-box;
 

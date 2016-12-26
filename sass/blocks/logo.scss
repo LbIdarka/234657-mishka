@@ -3,13 +3,13 @@
 .logo {
   position: relative;
   display: block;
-  padding: 18px 0;
   text-align: center;
 }
 
 .logo img {
   width: 86px;
   height: auto;
+  padding: 13px 0;
 
   &:hover {
   opacity: 0.6;
@@ -26,8 +26,8 @@
 
   .logo {
     display: flex;
-    width: 323px;
-    min-height: 100px;
+    width: 319px;
+    height: 80px;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -43,10 +43,12 @@
 
 @media ($desktop-widths) {
   .logo {
-    width: 326px;
+    width: 355px;
+    padding: 13px 0;
     order: 2;
     justify-content: center;
     border-bottom: none;
+    box-sizing: border-box;
   }
 
   .logo img {

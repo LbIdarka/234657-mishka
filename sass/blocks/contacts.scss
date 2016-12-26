@@ -69,8 +69,12 @@
 
   .contacts {
     margin-bottom: 57px;
-    padding-top: 62px;
+    padding-top: 45px;
     background-size: auto 17px;
+  }
+
+  .contacts-wrapper {
+    background: url("../img/icons/icon-flag.svg") no-repeat 93% 0;
   }
 
   .contacts__data {
@@ -78,7 +82,7 @@
     @include container;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: url("../img/icons/icon-flag.svg") no-repeat 100% 0;
+
 
 
     b {
@@ -132,16 +136,17 @@
     @include container;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background-position: 6% 15%;
   }
 
   .contacts__data {
     display: flex;
     width: 350px;
+    margin-top: -78px;
     align-self: center;
     flex-wrap: wrap;
     flex-direction: column;
     border-spacing: 0 15px;
-    background-position: 0 0;
 
     b {
       margin-bottom: 30px;

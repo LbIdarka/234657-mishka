@@ -27,7 +27,7 @@ h1 {
   .form-main__title {
     position: relative;
     min-height: 225px;
-    margin-top: -45px;
+    margin-top: -80px;
     z-index: 1;
     border-top: $border;
     background: #f1f1f1 url("../img/bg-zigzag-fill.svg") repeat-x 100% 100%;
@@ -51,7 +51,7 @@ h1 {
 
 @media ($desktop-widths) {
   .form-main__title {
-    margin-top: -36px;
+    margin-top: -45px;
     background-size: auto;
   }
 

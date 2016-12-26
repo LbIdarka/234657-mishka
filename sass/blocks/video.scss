@@ -79,6 +79,7 @@
   .video {
     display: flex;
     min-height: 743px;
+    margin-bottom: 98px;
     flex-wrap: wrap;
     border: none;
     background-position: 6% 73%;
@@ -95,14 +96,16 @@
 
   .video__description {
     width: 687px;
+    padding-top: 29px;
     align-content: space-around;
     justify-content: center;
     border: $border;
+    box-sizing: border-box;
 
     .button {
     width: 585px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
     }
   }
 
@@ -110,7 +113,6 @@
     position: relative;
     width: 449px;
     margin: 0;
-    margin-top: 40px;
     font-size: 20px;
     text-align: left;
   }

@@ -76,7 +76,7 @@ feedback__blockquote-source {
     width: 174px;
     order: 2;
     margin-top: 79px;
-    margin-right: 6.5104%;
+    margin-right: 0;
     align-self: flex-start;
     }
   }
@@ -111,12 +111,16 @@ feedback__blockquote-source {
   .feedback__controls {
     position: absolute;
     width: 138px;
-    bottom: 4px;
+    bottom: 20px;
     right: 23px;
   }
 
   .feedback__controls-link {
     border: none;
+
+    &--next {
+      padding-left: 30px;
+  }
   }
 }
 
@@ -150,6 +154,7 @@ feedback__blockquote-source {
   }
 
   .feedback__controls {
-    right: 32px;
+    right: 20px;
+    bottom: 23px;
   }
 }
