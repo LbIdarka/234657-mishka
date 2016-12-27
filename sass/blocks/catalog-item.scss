@@ -11,6 +11,7 @@
 }
 
 .catalog-item__info {
+  min-height: 179px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,6 +49,7 @@
 .catalog-item__info-order {
   display: flex;
   width: 100%;
+  min-height: 59px;
   justify-content: space-between;
   align-items: center;
   @include font-style(15px, 24px, 700, #000000);
@@ -56,12 +58,9 @@
 
 .catalog-item__info-order-price {
   margin: 0;
-  padding-top: 25px;
 }
 
 .catalog-item__info-order-link {
-  padding-top: 25px;
-  align-self: flex-end;
 
   svg {
     vertical-align: text-top;
@@ -106,6 +105,11 @@
 
   .catalog-item__info-order {
     font-size: 17px;
+  }
+
+  .catalog-item__info-order-price,
+  .catalog-item__info-order-link {
+    padding-top: 22px;
   }
 }
 

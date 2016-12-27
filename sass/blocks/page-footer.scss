@@ -7,7 +7,9 @@
 }
 
 .container {
+  min-height: 160px;
   display: flex;
+  @include container;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -23,14 +25,15 @@
 @media ($tablet-widths) {
 
   .container {
+    min-height: 133px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo {
     display: block;
     width: 220px;
-    padding: 51px 0 51px;
     flex-grow: 1;
   }
 

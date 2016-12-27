@@ -26,7 +26,7 @@
 
   .logo {
     display: flex;
-    width: 319px;
+    width: 321px;
     height: 80px;
     padding: 0;
     justify-content: flex-start;
@@ -43,13 +43,11 @@
 
 @media ($desktop-widths) {
   .logo {
-    width: 355px;
-    min-height: 100px;
-    padding: 13px 0;
+    width: 306px;
+    min-height: 85px;
     order: 2;
     justify-content: center;
-    border-bottom: none;
-    box-sizing: border-box;
+    border: none;
   }
 
   .logo img {

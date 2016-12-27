@@ -3,7 +3,7 @@
 
 .menu {
   display: block;
-  min-height: 75px;
+  min-height: 70px;
   margin: 0 auto;
 }
 
@@ -98,8 +98,8 @@
 .menu--closed .menu__toggle::before {
 content: "";
 position: absolute;
-top: 29px;
-left: -2px;
+top: 26px;
+left: 0px;
 
 width: 20px;
 height: 2px;
@@ -216,13 +216,13 @@ box-shadow: 0 6px 0 0 #000000,
 
     &:first-child {
       width: 82px;
-      align-self: center;
+      padding: 31px 0;
       border: none;
     }
 
      &:nth-child(2) {
       width: 264px;
-      padding: 28px 0;
+      padding: 22px 0;
       border-left: $border;
     }
   }
@@ -284,20 +284,20 @@ box-shadow: 0 6px 0 0 #000000,
 
   .menu__list {
     display: flex;
-    width: 346px;
-    min-height: 100px;
+    width: 373px;
+    height: 87px;
     order: 1;
     margin: 0;
   }
 
   .menu__list-item {
-    padding: 33px 0 0;
+    padding: 29px 0 0;
     text-align: left;
     font-size: 17px;
 
 
     &:first-child {
-      width: 185px;
+      width: 154px;
       border-right: $border;
     }
 
@@ -309,19 +309,20 @@ box-shadow: 0 6px 0 0 #000000,
 
   .menu__list-users {
     display: flex;
-    width: 348px;
-    min-height: 100px;
+    width: 371px;
+    height: 87px;
     order: 3;
     justify-content: flex-end;
     border-bottom: none;
   }
 
   .menu__list-users-item {
-    padding: 33px 0 0;
+    padding: 29px 0 0;
 
     &:first-child {
       width: 84px;
-      padding: 28px 0;
+      padding: 35px 0 0;
+      border-left: $border;
     }
 
     &:last-child {
@@ -339,7 +340,7 @@ box-shadow: 0 6px 0 0 #000000,
   .menu__list-new-item {
     display: block;
     padding: 0;
-    padding-top: 21px;
+    padding-top: 7px;
     font-weight: 700;
     box-sizing: border-box;
 

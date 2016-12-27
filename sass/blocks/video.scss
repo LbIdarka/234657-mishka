@@ -82,7 +82,7 @@
     margin-bottom: 98px;
     flex-wrap: wrap;
     border: none;
-    background-position: 6% 73%;
+    background-position: 6% 69%;
   }
 
   .video__play {
@@ -96,6 +96,7 @@
 
   .video__description {
     width: 687px;
+    min-height: 288px;
     padding-top: 29px;
     align-content: space-around;
     justify-content: center;
@@ -105,7 +106,7 @@
     .button {
     width: 585px;
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 33px;
     }
   }
 
@@ -139,11 +140,12 @@
 
   .video__description {
     width: 368px;
-    height: 452px;
+    min-height: 455px;
     align-content:  space-around;
 
     .button {
     width: 231px;
+      margin-bottom: 49px;
     }
   }
 
