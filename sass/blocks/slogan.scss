@@ -15,6 +15,7 @@
 
   h1 {
     margin: 70px auto;
+    @include container;
     @include font-style(27px, 30px, 700, #000000);
     text-align: center;
   }

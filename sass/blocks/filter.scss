@@ -3,16 +3,20 @@
 
 .filter {
   display: flex;
-  min-height: 1433px;
+//  min-height: 1433px;
   margin-bottom: 55px;
   flex-wrap: wrap;
-  align-content: space-between;
+//  align-content: space-between;
   @include container;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   display: none;
+}
+
+.filter__wrapper--bg {
+  margin: 11px 0 15px;
 }
 
 .filter__wrapper-title--green-line::before {
@@ -25,8 +29,8 @@ input[type="radio"] {
 
 .filter__wrapper-list {
   display: flex;
-  min-height: 100px;
-  width: 217px;
+  min-height: 83px;
+  width: 100%;
   flex-wrap: wrap;
   align-content: space-between;
 }
@@ -34,7 +38,7 @@ input[type="radio"] {
 .filter__wrapper-color-list {
   display: flex;
   width: 217px;
-  min-height: 344px;
+  min-height: 323px;
   flex-wrap: wrap;
   align-content: space-between;
   }
@@ -56,7 +60,7 @@ input[type="radio"] {
 
 .filter__wrapper-inner-item {
   display: flex;
-  min-height: 93px;
+  min-height: 88px;
   flex-wrap: wrap;
   align-content: space-around;
 }
@@ -75,17 +79,14 @@ input {
   }
 }
 
-.filter__wrapper-label--button {
-  padding-left: 70px;
-  padding-bottom: 40px;
+.filter__wrapper-label {
+  padding-left: 64px;
 }
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
   display: block;
-  padding-left: 70px;
-  padding-bottom: 40px;
   cursor: pointer;
 
 
@@ -101,7 +102,7 @@ input[type="checkbox"] + label {
 input[type="radio"] + label::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -12px;
   left: 0;
   width: 39px;
   height: 41px;
@@ -113,8 +114,8 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 11px;
+  top: 0px;
+  left: 12px;
   width: 16px;
   height: 17px;
   background: #63d1bb;
@@ -229,6 +230,43 @@ label {
 
   .filter__wrapper--container {
     @include container;
+    padding: 20px 0;
+  }
+
+  .filter__wrapper-list {
+    align-content: stretch;
+  }
+
+  .filter__wrapper-label {
+    padding-left: 116px;
+  }
+
+  input[type="radio"] + label::before {
+    width: 50px;
+    height: 50px;
+    top: -22px;
+    left: 37px;
+  }
+
+  input[type="radio"]:checked + label::after {
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    left: 52px;
+  }
+
+  input[type="checkbox"] + label::before {
+  top: -10px;
+  left: 1;
+  width: 55px;
+  height: 51px;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    top: 5px;
+    left: 15px;
+    width: 31px;
+    height: 23px;
   }
 
   .filter__wrapper-contacts {
@@ -320,21 +358,25 @@ label {
   box-sizing: border-box;
 }
 
-input[type="checkbox"]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 11px;
-  width: 22px;
-  height: 17px;
-  background: url(../img/icons/icon-tick.svg) no-repeat 50% 50%;
-  background-size: 22px 17px;
-}
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 11px;
+    width: 22px;
+    height: 17px;
+    background: url(../img/icons/icon-tick.svg) no-repeat 50% 50%;
+    background-size: 22px 17px;
+  }
+
+  filter__wrapper-inner {
+    margin-top: 70px;
+  }
 
   .filter__wrapper-inner-item {
     width: 100%;
-    flex-wrap: nowrap;
     align-items: baseline;
+
   }
 
   .filter__wrapper--contacts {
@@ -390,7 +432,7 @@ input[type="checkbox"]:checked + label::after {
   }
 
   .filter__wrapper--container {
-    width: 815px;
+    width: 1050px;
     margin: 0 auto;
   }
 
@@ -410,6 +452,19 @@ input[type="checkbox"]:checked + label::after {
     .filter__wrapper-item {
       width: 33%;
     }
+  }
+
+  .filter__wrapper-title {
+    width: 130px;
+    margin-left: 65px;
+
+    &:first-of-type {
+      width: 86px;
+    }
+  }
+
+  .filter__wrapper-inner {
+    width: 700px;
   }
 
   .filter__label-icon {

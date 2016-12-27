@@ -125,6 +125,10 @@
     width: 316px;
     flex-wrap: wrap;
     flex-direction: column;
+
+    &:nth-child(n+4) {
+      margin-top: 50px;
+    }
   }
 
   .catalog-item__foto {

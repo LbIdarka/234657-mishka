@@ -16,8 +16,8 @@ h1 {
 .form-main__description {
   @include container;
   @include font-style(13px, 24px, 400, #444444);
-  margin-bottom: 27px;
-  margin-top: 27px;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 
@@ -26,7 +26,7 @@ h1 {
 
   .form-main__title {
     position: relative;
-    min-height: 225px;
+    min-height: 237px;
     margin-top: -80px;
     z-index: 1;
     border-top: $border;
@@ -40,7 +40,7 @@ h1 {
   }
 
   .form-main__description {
-    margin-top: 82px;
+    margin-top: 60px;
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 30px;
@@ -51,11 +51,13 @@ h1 {
 
 @media ($desktop-widths) {
   .form-main__title {
+    min-height: 271px;
     margin-top: -49px;
     background-size: auto;
   }
 
   .form-main__description {
     width: 672px;
+    margin-top: 105px;
   }
 }
