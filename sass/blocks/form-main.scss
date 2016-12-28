@@ -10,7 +10,7 @@
 
 h1 {
   @include font-style(27px, 30px, 700, #000000);
-  margin: auto;
+  margin: 72px auto;
 }
 
 .form-main__description {
@@ -35,6 +35,7 @@ h1 {
   }
 
   h1 {
+    margin: 94px auto;
     font-size: 43px;
     line-height: 50px;
   }

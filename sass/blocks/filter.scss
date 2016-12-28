@@ -475,6 +475,7 @@ label {
   .filter__wrapper-title {
     width: 112px;
     margin-left: 65px;
+    padding-top: 30px;
 
     &--radio,
     &--checkbox {
@@ -484,24 +485,31 @@ label {
 
   .filter__wrapper-inner {
     width: 700px;
+    padding-top: 16px;
+  }
+
+  .filter__wrapper-inner-item {
+    min-height: 76px;
   }
 
   .filter__label-icon {
     right: 177px;
+    top: 25px;
   }
 
   .filter__wrapper-tip {
+    width: 700px;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
 
-  width: 700px;
-  justify-content: space-between;
-
-//    .button {
-//      margin-left: 177px;
-//    }
+  .filter__wrapper-container--contacts {
+    padding-bottom: 9px;
+    padding-top: 3px;
   }
 
   .filter__wrapper--more {
-    margin-top: 30px;
+    margin-top: 47px;
   }
 
   input[type="tel"],
