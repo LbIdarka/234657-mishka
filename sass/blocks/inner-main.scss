@@ -5,13 +5,13 @@
   display: flex;
   min-height: 177px;
   background-color: $bg-title-footer;
+}
 
   h1 {
     margin: auto;
     @include font-style(27px, 30px, 700, #000000);
     text-align: center;
   }
-}
 
 
 
@@ -26,6 +26,7 @@
     z-index: 1;
     background: #f1f1f1 url("../img/bg-zigzag-fill.svg") repeat-x 100% 100%;
     background-size: auto 24px;
+  }
 
     h1 {
       margin: auto;
@@ -33,7 +34,6 @@
       line-height: 50px;
       text-align: center;
     }
-  }
 }
 
 
@@ -42,7 +42,7 @@
 
   .inner-main__title {
     position: relative;
-    height: 258px;
+    height: 274px;
     margin-top: -49px;
     z-index: 1;
     background-size: auto;
@@ -51,6 +51,5 @@
   h1 {
     font-size: 53px;
     line-height: 57px;
-    text-align: center;
   }
 }

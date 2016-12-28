@@ -76,6 +76,12 @@
 
   .contacts-wrapper {
     background: url("../img/icons/icon-flag.svg") no-repeat 93% 0;
+
+    .button {
+      width: 230px;
+      margin: 57px auto;
+      text-align: center;
+    }
   }
 
   .contacts__data {
@@ -111,12 +117,6 @@
       background-size: 768px auto;
     }
   }
-
-  .button {
-    width: 230px;
-    margin-top: 57px;
-    text-align: center;
-  }
 }
 
 
@@ -138,6 +138,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     background-position: 6% 15%;
+
+     .button {
+      width: 230px;
+      margin: -51px 0 47px 174px;
+    }
   }
 
   .contacts__data {
@@ -173,9 +178,4 @@
     }
   }
 
-  .button {
-    width: 230px;
-    margin-left: 174px;
-    margin-top: -51px;
-  }
 }

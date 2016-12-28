@@ -73,11 +73,10 @@ feedback__blockquote-source {
     }
 
     .button {
-    width: 174px;
-    order: 2;
-    margin-top: 79px;
-    margin-right: 0;
-    align-self: flex-start;
+      position: absolute;
+      top: 37px;
+      right: 0;
+      width: 174px;
     }
   }
 
@@ -90,14 +89,12 @@ feedback__blockquote-source {
   }
 
   .feedback__title {
-    order: 1;
     margin-top: 79px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__blockquote {
-    order: 3;
     width: 100%;
     @include container;
     font-size: 17px;
@@ -139,6 +136,8 @@ feedback__blockquote-source {
 
   .feedback__title {
     margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .feedback__blockquote {
