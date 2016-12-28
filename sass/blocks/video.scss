@@ -140,21 +140,27 @@
 
   .video__description {
     width: 368px;
-    min-height: 455px;
+    height: 455px;
     align-content:  space-around;
+    justify-content: center;
 
     .button {
-    width: 231px;
-      margin-bottom: 49px;
+      width: 223px;
+      margin-bottom: 48px;
     }
   }
 
   .video__description-title {
-    width: 231px;
-    margin-top: 73px;
+    width: 223px;
+    margin-top: 85px;
   }
 
   .video__description-info {
-    width: 231px;
+    width: 223px;
+  }
+
+  .video__play-icon {
+    top: 40%;
+    left: 44%;
   }
 }

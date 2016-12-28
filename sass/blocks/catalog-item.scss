@@ -117,10 +117,6 @@
 
 @media ($desktop-widths) {
 
-  .catalog {
-    margin: 131px auto 41px;
-  }
-
   .catalog-item {
     width: 316px;
     flex-wrap: wrap;
@@ -138,11 +134,19 @@
 
   .catalog-item__info {
     width: 316px;
-    min-height: 213px;
+    min-height: 197px;
+    padding: 23px 28px 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .catalog-item__info-description {
     margin: 0;
+    padding-bottom: 25px;
+
+    &--big-cart {
+      padding-bottom: 0;
+    }
   }
 
   .catalog-item__info-text {
